@@ -88,3 +88,7 @@ section > ul{
     border-radius: 4px;
     resize: none; /* Evita redimensionamento manual do textarea */
   }
+  
+  ul{
+    list-style-type: none;
+  }

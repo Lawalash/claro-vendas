@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checklist</title>
+    <link rel="stylesheet" href="checklist.css">
+</head>
+<body>
+    <header>
+        <h1 id="headerh1"> <a href="home.html"><img id="centerclaro" src="imagens/claroh.png" alt="logoclaro"></a> Preço de tabela dos produtos</h1>
+        
+        <nav>
+           <a href="tabelainternet.html">Internet</a>
+           <a href="tabelaclarotv.html">Claro TV +</a>
+           <a href="tabelamovel.html">Móvel</a>
+           <a href="tabelafixo.html">Fixo</a>
+           <a id="check"  href="tabelacheck.html">CHECKLIST</a>
+        </nav>
+    </header>
+    <script>
+      function calculateProportional() {
+        var startDate = new Date(document.getElementById('startDate').value);
+        var dueDate = new Date(document.getElementById('dueDate').value);
+        var productValue = parseFloat(document.getElementById('productValue').value);
+    
+        if (isNaN(productValue) || startDate > dueDate) {
+          alert('Por favor, preencha os campos corretamente.');
+          return;
+        }
+    
+        var timeDifference = dueDate.getTime() - startDate.getTime();
+        var daysUsed = Math.ceil(timeDifference / (1000 * 3600 * 24));
+    
+        var dailyCost = productValue / 30; // Considerando um mês de 30 dias
+        var proportionalCost = dailyCost * daysUsed;
+    
+        document.getElementById('result').innerHTML = 'Custo Proporcional: R$ ' + proportionalCost.toFixed(2);
+      }
+    </script>
+    
+    <Main>
+        <div class="checklist-container">
+
+            <div class="checklist-item">
+              <input type="checkbox" id="item1">
+              <label class="lab1" for="item1">Passar o valor do produto completo</label>
+              <div class="checklist-content">
+                <p>Voce adquiriu conosco o produto (...) por R$00,00</p>
+              </div>
+            </div>
+        
+            <div class="checklist-item">
+              <input type="checkbox" id="item2">
+              <label class="lab1" for="item2">Fidelidade de 12 meses e valor da multa de cada item</label>
+              <div class="checklist-content">
+                
+                <table class="center">
+                    <thead>
+                        
+                       
+                        <tr>
+                            
+                            <th>Produtos</th>
+                            <th>Fidelidade</th>
+                            <th>Multa</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                       
+                        <tr>
+                            <th> INTERNET</th>
+                            <td>12 meses</td>
+                            <td>R$300,00</td>
+                        </tr>
+                        <tr>
+                            <th> TV CLARO BOX</th>
+                            <td>12 meses</td>
+                            <td>R$500,00</td>
+                        </tr>
+                        <tr>
+                            <th> MÓVEL</th>
+                            <td>12 meses</td>
+                            <td>R$120,00</td>
+                        </tr>
+                        <tr>
+                            <th> PÓS PAGO</th>
+                            <td>12 meses</td>
+                            <td>R$480,00</td>
+                        </tr>
+                        <tr>
+                            <th> FIXO</th>
+                            <td>12 meses</td>
+                            <td>R$200,00</td>
+                        </tr>
+                        
+                    
+                    </tbody>
+                </table>
+              </div>
+            </div>
+        
+            <div class="checklist-item">
+              <input type="checkbox" id="item3">
+              <label class="lab1" for="item3">Passar os benefícios do plano</label>
+              <div class="checklist-content">
+                <table class="center">
+                  <thead>
+                      
+                     
+                      <tr>
+                          
+                          <th>Produtos</th>
+                          <th>Link direto</th>
+                          
+                      </tr>
+                  </thead>
+                  <tbody>
+                     
+                      <tr>
+                          <th> INTERNET</th>
+                          <td class="direct1"><a class="direct" href="https://www.claro.com.br/internet/banda-larga" target="_blank">Clique aqui pra acessar os beneficios da INTERNET</a></td>
+                          
+                      </tr>
+                      <tr>
+                          <th> TV CLARO BOX</th>
+                          <td class="direct1"><a class="direct" href="https://www.claro.com.br/claro-tv-mais" target="_blank"> Clique aqui para acessar os beneficios da TV CLARO BOX</a></td>
+                          
+                      </tr>
+                      <tr>
+                          <th> MÓVEL</th>
+                          <td class="direct1"><a class="direct" href="https://www.claro.com.br/celular/controle" target="_blank">Clique aqui para acessar os beneficios do PLANO CONTROLE</a></td>
+                          
+                      </tr>
+                      <tr>
+                          <th> PÓS PAGO</th>
+                          <td class="direct1"><a class="direct" href="https://www.claro.com.br/celular/pos" target="_blank">Clique aqui para acessar os beneficios do PÓS PAGO</a></td>
+                          
+                      </tr>
+                      <tr>
+                          <th> FIXO</th>
+                          <td class="direct1"><a class="direct" href="https://www.claro.com.br/fone" target="_blank"> Clique aqui para acesar os beneficios do TELEFONE FIXO</a></td>
+                          
+                      </tr>
+                      
+                  
+                  </tbody>
+              </table>
+              </div>
+            </div>
+
+            <div class="checklist-item">
+                <input type="checkbox" id="item4">
+                <label id="calc1" class="lab1" for="item4">Informar que a primeira fatura não vai vir o valor integral, mas sim o proporcional. Calculadora disponível ao clicar na mensagem</label>
+                <div class="checklist-content">
+
+                  <class="calculator" id="calc">
+                    <label for="startDate">Data de Instalação:</label>
+                    <input type="date" id="startDate" required>
+                  
+                    <label for="dueDate">Data de Vencimento:</label>
+                    <input type="date" id="dueDate" required>
+                  
+                    <label for="productValue">Valor do Produto:</label>
+                    <input type="number" id="productValue" placeholder="Digite o valor" required>
+                  
+                    <button onclick="calculateProportional()">Calcular Proporcional</button>
+                  
+                    <div id="result"></div>
+
+                </div>
+              </div>
+        
+           
+        
+          </div>
+          <div class="checklist-container">
+
+            <div class="checklist-item">
+              <input type="checkbox" id="item5">
+              <label class="lab1" for="item5">Informar o vencimento e a forma de pagamento novamente</label>
+              <div class="checklist-content">
+                <p>A forma de pagamento ficou em (...) e o vencimento para (...)</p>
+              </div>
+            </div>
+            <div class="checklist-container">
+
+              <div class="checklist-item">
+                <input type="checkbox" id="item6">
+                <label class="lab1" for="item6">Informar aqui após 12 meses tem reajuste anual</label>
+                <div class="checklist-content">
+                  <p>Após os 12 meses, pode ou nao haver o reajuste do IGPM do governo sob o plano contratado, mas é só ligar 1 mes antes que alteramos o valor  </p>
+                </div>
+              </div>
+
+              <div class="checklist-item">
+                <input type="checkbox" id="item7">
+                <label class="lab1" for="item7">Informar que ele deve acessar o aplicativo e baixá-lo no celular para ter acesso às informações do contrato data de instalação</label>
+                <div class="checklist-content">
+                  <p> Não se esqueça de baixar nossos aplicativos, <strong>minha claro Claro residencial</strong> e <strong>Minha claro móvel</strong>, onde lá voce vai acompanhar todo passo a passo da instalação, como também vai encontrar as outras aplicações que vem junto ao seu plano.</p>
+                </div>
+              </div>
+
+              <div class="checklist-item">
+                <input type="checkbox" id="item8">
+                <label class="lab1" for="item8">Informar que todo o contrato e informações passadas vão chegar no meio dele junto com protocolo em até 24 horas.</label>
+                <div class="checklist-content">
+                  <p>Peço que fique acompanhando seu <strong>E-mail</strong> e <strong>SMS</strong>, pois toda informação passada vai chegar junto ao protocolo em até 24 horas.</p>
+                </div>
+              </div>
+
+              <div class="checklist-item">
+                <input type="checkbox" id="item9">
+                <label class="lab1" for="item9">Informar data da intalação, informar que é preciso ter alguém +18 pra receber o técnico, portando identidade ou CNH e um comprovante de residência (se possivel, mas não é obrigatório) </label>
+                <div class="checklist-content">
+                  <p>Firmando novamente, a data para instalação ficou para o dia (...), é preciso ter alguém +18 pra receber o técnico, portando identidade ou CNH, e se possivel um comprovante de residência.</p>
+                </div>
+              </div>
+
+              <div class="checklist-item">
+                <input type="checkbox" id="item10">
+                <label class="lab1" for="item10">Depois disso é só confirmar com ele se ele aceita a adesão do plano com sim ou não e daí você fecha o contrato e tabula tudo no EVA antes da ligação cair. </label>
+                <div class="checklist-content">
+                  <p>Poderia me confirmar com <strong>SIM</strong> ou <strong>NAO</strong>, se voce aceita a adesão do plano ofertado, pra deixar aqui registrado? por favor.</p>
+                </div>
+              </div>
+    </Main>
+
+    
+</body>
+</html>
