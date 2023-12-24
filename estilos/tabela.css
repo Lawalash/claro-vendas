@@ -20,9 +20,9 @@ body{
 }
 
 header{
-    background-color: var(--cor2);
+    background-image: linear-gradient(to bottom,var(--cor2), var(--cor3));
     padding-top: 15px;
-    padding-bottom: 45px;
+    padding-bottom: 30px;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -41,16 +41,15 @@ main{
 }
 #centerclaro{
     max-width: 70px;
-    height: auto;
-    display: block;
     float: left;
     padding-left: 15px;
-    margin-top: 30px;
     margin-right: 20px;
     
 }
 nav {  
     text-align: left;
+    margin-top: 20px;
+    margin-bottom: 10px;
   }
 nav > a {
     color: var(--cor0);
