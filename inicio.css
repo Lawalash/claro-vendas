@@ -10,6 +10,7 @@
     --cor2:#1E73BE;
     --cor3:#A961D7;
     --cor4:#DA291C;
+    --cor5:#b32218;
 
 }
 
@@ -32,12 +33,10 @@ html {
 }
 
 body {
-  background: linear-gradient(rgba(17, 17, 17, 0.5), rgba(20, 20, 20, 0.568)), url(imagens/claro1.jpg);
-  background-position: center center;
-  background-size: cover;
-  background-position-y: 0px;
-  background-repeat: no-repeat;
+  background-image: linear-gradient(to bottom,#eb4539d2, #53130e);
+  overflow: hidden; /* Adicione esta linha para ocultar barras de rolagem */
 }
+
 
 /* Menu - Header - NavBar */
 
@@ -77,7 +76,7 @@ header {
 .menu-content .list-itens a {
   text-decoration: none;
   color: white;
-  padding: 1.5rem;
+  padding: 1.7rem;
   transform: 2ms ease-in;
   position: relative;
 }
@@ -88,7 +87,7 @@ header {
   bottom: 0px;
   left: 0px;
   width: 0px;
-  height: 2px;
+  height: 3px;
   background-color: var(--cor4);
   transition: all 1.5s ease; 
 }
@@ -99,4 +98,76 @@ header {
 
 /* Centro - Conteudo Principal */
 
+/* Conteudo central */
+main {
+  height: 93vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.primary-text {
+  width: 850px;
+  font-size: 3.4rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btns button {
+  width: 250px;
+  height: 60px;
+  cursor: pointer;
+  border: 1px solid white;
+  color: white;
+  text-transform: uppercase;
+  background-color: transparent;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  border-radius: 20px;
+  position: relative;
+  transition: 1.}
+
+  .btns button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #da291c52; /* Cor do efeito de transição */
+    border-radius: 20px;
+    transition: width 0.7s ease-out; /* Tempo e tipo de transição */
+    z-index: -1; /* Coloca o efeito por trás do texto do botão */
+  }
+  
+  .btns button:hover::before {
+    width: 100%;
+  }
+  #centerclaro{
+    max-width: 100px;
+    padding-left: 15px;
+    margin-right: 20px;
+    margin-bottom: 5px;
+    
+}
+#centercorreios{
+  max-width: 200px;
+  padding-left: 15px;
+  margin-right: 20px;
+  
+  
+}
+/* fim do conteúdo central */
