@@ -33,8 +33,13 @@ html {
 }
 
 body {
-  background-image: linear-gradient(to bottom,#eb4539d2, #53130e);
+  background: linear-gradient(rgba(22, 22, 22, 0.473), rgba(20, 20, 20, 1)), url(https://www.parkjacarepagua.com.br/Multiplan/filer_public/eb/09/eb093cf8-9676-4665-b745-3b7861411971/claro.jpeg);
+  background-position: center center;
+  background-size: cover;
+  background-position-y: 0px;
+  background-repeat: no-repeat;
   overflow: hidden; /* Adicione esta linha para ocultar barras de rolagem */
+
 }
 
 
@@ -127,7 +132,7 @@ main {
 }
 
 .btns button {
-  width: 250px;
+  width: 280px;
   height: 60px;
   cursor: pointer;
   border: 1px solid white;
