@@ -33,7 +33,7 @@ html {
 }
 
 body {
-  background: linear-gradient(rgba(22, 22, 22, 0.473), rgba(20, 20, 20, 1)), url(imagens/claro.jpeg);
+  background: linear-gradient(rgba(22, 22, 22, 0.473), rgba(20, 20, 20, 1)), url(../imagens/claro.jpeg);
   background-position: center center;
   background-size: cover;
   background-position-y: 0px;
