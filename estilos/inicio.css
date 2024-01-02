@@ -118,11 +118,26 @@ main {
   align-items: center;
 }
 
-.primary-text {
-  width: 850px;
-  font-size: 3.4rem;
-  margin-bottom: 2rem;
+#center-container {
   text-align: center;
+}
+
+#click-to-show {
+  font-size: 2rem;
+  letter-spacing: 0.4rem;
+  cursor: pointer;
+}
+
+#sites-container {
+  display: none;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+#sites-container.show-sites {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .btns {
@@ -132,7 +147,7 @@ main {
 }
 
 .btns button {
-  width: 280px;
+  width: 250px;
   height: 60px;
   cursor: pointer;
   border: 1px solid white;
@@ -161,6 +176,15 @@ main {
   .btns button:hover::before {
     width: 100%;
   }
+
+
+
+
+
+
+
+
+
   #centerclaro{
     max-width: 100px;
     padding-left: 15px;
@@ -168,6 +192,7 @@ main {
     margin-bottom: 5px;
     
 }
+
 #centercorreios{
   max-width: 200px;
   padding-left: 15px;
