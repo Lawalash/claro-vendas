@@ -145,6 +145,10 @@ main {
   justify-content: center;
   gap: 20px;
 }
+.btns img{
+  max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho do botão */
+  max-height: 100%; /* Garante que a imagem não ultrapasse o tamanho do botão */
+}
 
 .btns button {
   width: 250px;
@@ -177,27 +181,7 @@ main {
     width: 100%;
   }
 
-
-
-
-
-
-
-
-
-  #centerclaro{
-    max-width: 100px;
-    padding-left: 15px;
-    margin-right: 20px;
-    margin-bottom: 5px;
-    
-}
-
-#centercorreios{
+#centerreceita{
   max-width: 200px;
-  padding-left: 15px;
-  margin-right: 20px;
-  
-  
 }
 /* fim do conteúdo central */

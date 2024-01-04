@@ -29,12 +29,15 @@
         <div class="itens-container">
 
             <div class="item" onclick="toggleTexto(1)">ABORDAGEM</div>
+            <div class="item" onclick="toggleTexto(2)">BLOCO DE NOTAS</div>
+            <div class="item" onclick="toggleTexto(3)">EXEMPLO DE SCRIPT</div>
             
             <!-- Repita esse padrão para os outros itens -->
         </div>
+        
 
-        <section>
-            <div class="texto-container" id="texto-container-6">
+        <section class="sectionbloc">
+            <div class="texto-container" id="texto-container-1">
 
              <p>Além da ativação da venda, há uma etapa muito importante para que a gente possa receber pelo contrato, que é a instalação. Então como, em seu atendimento você vai conseguir, garantir que produto vendido, será instalado?</p>
 
@@ -84,16 +87,74 @@
             </ul>
 
 
-            Se ainda ficou com dúvida, assista o vídeo abaixo:
+            <p>Se ainda ficou com dúvida, assista o vídeo abaixo:</p>
+
+            <article>
+                <div class="video">
+                    <iframe width="560" height="315" src="video/instalação.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </article>
+
             </div>
         </section>
 
-        <article>
-            <h1>Clique sob o item ABORDAGEM para ler o conteúdo, caso esteja com dúvidas, assista ao video:</h1>
-            <div class="video">
-                <iframe width="560" height="315" src="video/instalação.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <section class="sectionbloc">
+
+            <div class="texto-container" id="texto-container-2">
+
+                <h1 class="h1bloc">bloco de notas</h1>
+
+                <ul id="ulbloc">
+                    <li>Endereço:</li>
+                    <li>Cep:</li>
+                    <li>HP:</li>
+                    <li>HP espelho (Quando você cria um hp pegando outro como referência):</li>
+                    <br>
+                    <li>TELEFONE (1):</li>
+                    <li>TELEFONE (2):</li>
+                    <li>EMAIL:</li>
+                    <li>NOME:</li>
+                    <li>CPF:</li>
+                    <li>RG:</li>
+                    <li>DATA DE NASCIMENTO:</li>
+                    <li>nome da mãe:</li>
+                    <br>
+                    <li>cobrança boleto:</li>
+                    <li>cobrança débito automático:</li>
+                    <li>AGÊNCIA:</li>
+                    <li>CONTA:</li>
+                    <li>Dia do vencimento da fatura:</li>
+                    <br>
+                    <li>ID da chamada:</li>
+                    <li>Número da proposta:</li>
+                    <li>número do contrato:</li>
+                    <li>protocolo:</li>
+                </ul>
+
             </div>
-        </article>
+            
+
+        </section>
+
+        <section class="sectionbloc">
+
+            <div class="texto-container" id="texto-container-3">
+
+                <h1>OLLOS </h1>
+
+        <p>Olá bom dia (Boa tarde ou noite), me chamo ___ sou consultor (a) da claro-NET tudo bom?</p>
+
+        <p>Temos ofertas hoje exclusivas e imperdíveis pra você e sua linha aqui da claro. Atualmente estamos trabalhando com <strong>INTERNET</strong>, <strong>TV</strong>, <strong>MÓVEL</strong> E <strong>FIXO</strong>, você possui algum serviço conosco em sua residência?</p>
+
+        <p><a href="roteirovendas.html" target="_blank" class="alink">Clique aqui</a> E vá até a aba de sondagem pra seguir de acordo com o produto ofertado</p>
+
+        <p>OBS: Caso esteja atendendo no <strong>EVA</strong>, verificar pra qual bot estão virados no mês atual para seguir com um script adequado, mesmo assim, script acima pode ser usado pois seria um padrão-exemplo.</p>
+
+            </div>
+
+
+        </section>
+
 
     </main>
     <script>
