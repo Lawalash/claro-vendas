@@ -149,6 +149,9 @@ main {
   max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho do botão */
   max-height: 100%; /* Garante que a imagem não ultrapasse o tamanho do botão */
 }
+#btnsreceita{
+  max-width: 200px;
+}
 
 .btns button {
   width: 250px;
