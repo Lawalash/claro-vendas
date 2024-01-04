@@ -150,6 +150,7 @@ main {
   max-height: 100%; /* Garante que a imagem não ultrapasse o tamanho do botão */
 }
 #btnsreceita{
+  padding-top: 10px;
   max-width: 200px;
 }
 
