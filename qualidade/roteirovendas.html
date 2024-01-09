@@ -210,33 +210,55 @@
         <h2 class="h2edit">TV:</h2>
 
         <ul>
-            <li><strong>Claro TV+APP:</strong></li>
+            <li class="lih1">App Claro tv+</li>
+            <li>- Assista onde e quando quiser</li>
+            <li>- 2 streamings simultâneos</li>
+            <li>- Recomece a programação ao vivo ou volte em até 7 dias</li>
+            <li>- Download de conteúdo para assistir offline</li>
+            <li>- Globoplay incluso</li>
+            <li>- mais de 100 canais em HD</li>
 
-            <li>
-                Online – não precisa de equipamento físico;
-                Acesso via APP, tablete, smartphone, TV com sistema Android;
-                Possibilidade de turbinar com canais avulsos, como por exemplo Telecine, HBO MAX, entre outros;
-                Assista de onde e quando quiser com cadastro em 5 dispositivos e uso em 2 telas simultâneas.
-            </li>
+            <li class="lih1">Box Claro tv+</li>
+            <li>- Entrega rápida e auto instalação <a href="https://www.claro.com.br/claro-tv-mais/box#saiba-como-instalar" target="_blank">(saiba como clicando aqui)</a></li>
+            <li>- Seus apps de streaming favoritos integrados</li>
+            <li>- Encontre seus conteúdos com comando de voz</li>
+            <li>- Conexão Wi-Fi: leve sua BOX para onde quiser</li>
+           <li><strong>- Box Claro tv+ também conta com o globoplay ja incluso, para demais informações clique na imagem a baixo:</strong></li>
+
+            <div class="imagem-container" onclick="expandirImagem()">
+                <img src="imagens/plano-pequeno.jpeg" alt="Imagem Pequena">
+            </div>
+        
+            <div class="overlay" id="overlay" onclick="contrairImagem()">
+                <div class="imagem-expandida">
+                    <img src="imagens/plano-grande.jpeg" alt="Imagem Grande">
+                    <span class="fechar" onclick="contrairImagem()">&times;</span>
+                </div>
+            </div>
+
+
+            <li class="lih1">4k Claro tv+</li>
+            <li>Imagem em alta definição 4k</li>
+            <li>Seus apps de streaming favoritos integrados</li>
+            <li>Instalação com técnico e assistência</li>
+            <li>Comando de voz com Alexa Integrada</li>
+            <li>- Box Claro tv+ também conta com o globoplay ja incluso, para demais informações clique na imagem a cima:</li>
+
+            <li class="lih1">Soundbox Claro tv+</li>
+
+            <li>- A Soundbox Claro tv+ transforma a sua TV em smart com qualidade de imagem 4K HDR e som Dolby Atmos desenvolvido pela Bang & Olufsen.</li>
             
-            <li><strong>Claro TV+BOX:</strong></li>
+            <li>- E tenha Globoplay incluso para assistir aos seus conteúdos com uma imersão incrível em cada cena</li>
+            
+            <li>- use os comandos de voz da Alexa no controle e leve o Claro música ilimitado gratuitamente para aproveitar o seu aparelho ao máximo.</li>
+            
+            <li>- E você ainda pode adquirir até 2 pontos adicionais ao seu plano!</li>
 
-            <li>
-                Controle remoto com comando de voz;
-                Recursos para voltar a programação até 7 dias, pausar e gravar;
-                Equipamento auto instalável, basta conectar na TV e na internet por via cabo ou via Wi-Fi;
-                Prático podendo levar o equipamento para qualquer lugar.
-            </li>
-
-            <li><strong>Claro Net HDTV:</strong></li>
-
-            <li>
-                Variedade na programação;
-                Qualidade de som e imagem;
-                Acesso à conteúdos através do NOW;
-                Contratação de pacotes avulsos. <strong>(contém o mesmo do claro tv+box)</strong>
-            </li>
         </ul>
+            
+
+            
+            
 
         <h2 class="h2edit">VIRTUA:</h2>
 
@@ -347,6 +369,17 @@
                 }
             });
         }
+    </script>
+
+    <script>
+                function expandirImagem() {
+            document.getElementById('overlay').style.display = 'flex';
+        }
+
+        function contrairImagem() {
+            document.getElementById('overlay').style.display = 'none';
+        }
+
     </script>
 </body>
 

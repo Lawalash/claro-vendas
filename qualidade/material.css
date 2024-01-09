@@ -175,6 +175,10 @@ article > h1{
 .h1bloc{
     text-align: center;
 }
+.h1script{
+    text-align: center;
+}
+
 .sectionbloc{
     padding-left: 20px;
     padding-right: 20px;
