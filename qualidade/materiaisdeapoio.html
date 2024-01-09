@@ -90,8 +90,8 @@
             <p>Se ainda ficou com dúvida, assista o vídeo abaixo:</p>
 
             <article>
-                <div class="video" id="video-container">
-                    <iframe width="560" height="315" src="video/instalação.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="video">
+                    <iframe width="560" height="315" src="video/instalação.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </article>
 
@@ -186,25 +186,6 @@
                 }
             });
         }
-    </script>
-
-    <script>
-        var videoPlaying = false;
-
-function toggleVideo() {
-    var videoIframe = document.getElementById('instalacao-video');
-
-    if (videoPlaying) {
-        // Pausar o vídeo se estiver reproduzindo
-        videoIframe.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
-    } else {
-        // Iniciar o vídeo se não estiver reproduzindo
-        videoIframe.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
-    }
-
-    // Alternar o status do vídeo
-    videoPlaying = !videoPlaying;
-}
     </script>
 
 </body>
