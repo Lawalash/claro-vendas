@@ -145,41 +145,50 @@ main {
   max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho do botão */
   max-height: 100%; /* Garante que a imagem não ultrapasse o tamanho do botão */
 }
-#btnsreceita{
-  padding-top: 10px;
-  max-width: 200px;
+
+section{
+    margin-left: 25px;
+    max-width:830px;
+    line-height: 1.7;
+    
+
+}
+#h2{
+    font-weight: normal;
+    font-size: 0.8em;
+    margin-bottom: 20px;
+    margin-left: 18px;
+}
+.h2edit{
+    font-weight: bolder;
+    font-size: 1.1em;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    color:rgb(56, 56, 56);
 }
 
-.btns button {
-  width: 250px;
-  height: 60px;
-  cursor: pointer;
-  border: 1px solid white;
-  color: white;
-  text-transform: uppercase;
-  background-color: transparent;
-  font-weight: bold;
-  letter-spacing: 0.2rem;
-  border-radius: 20px;
-  position: relative;
-  transition: 1.}
 
-  .btns button::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background-color: #da291c52; /* Cor do efeito de transição */
-    border-radius: 20px;
-    transition: width 0.7s ease-out; /* Tempo e tipo de transição */
-    z-index: -1; /* Coloca o efeito por trás do texto do botão */
-  }
-  
-  .btns button:hover::before {
-    width: 100%;
-  }
+#h2contorn{
+    text-decoration: underline;
+    font-weight: bolder;
+    font-size: 0.8em;
+    margin-bottom: 20px;
+}
+Ul{
+   margin-bottom: 15px;
+   font-size: 0.9em;
+   
+}
+li{
+    padding-bottom: 5px;
+    text-decoration: none;
+}
+p{
+    margin-bottom: 10px;
+    font-size: 0.9em;
+    margin-top: 10px;
+    margin-left: 25px;
+    margin-bottom: 10px;
+    
+}
 
-
-/* fim do conteúdo central */
