@@ -1,8 +1,11 @@
-/* style.css */
-
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+   
+  }
 
 :root{
     --cor0:white;
@@ -10,140 +13,122 @@
     --cor2:#1E73BE;
     --cor3:#A961D7;
     --cor4:#DA291C;
-    --cor5:#b32218;
 
 }
-
-/* Zerando CSS */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Fundo-tela */
-
-html {
-  width: 100vw;
-  height: 100vh;
-  font-size: 62.5%;
-  color: white;
-  font-family: 'Lato', sans-serif;
-}
-
-body {
-  background: linear-gradient(rgba(22, 22, 22, 0.473), rgba(20, 20, 20, 1)), url(imagens/roteiro-vendas.png);
-  background-position: center center;
-  background-size: cover;
-  background-position-y: 0px;
-  background-repeat: no-repeat;
-  overflow: hidden; /* Adicione esta linha para ocultar barras de rolagem */
-
-}
-
-
-/* Menu - Header - NavBar */
 
 header {
-  width: 100%;
-  height: 10vh;
-  background-color: rgba(22, 22, 22, 0.2);
+    background-color:var(--cor2);
+    padding: 20px;
+    text-align: left;
+  }
+main{
+    background-color: var(--cor0);
+    max-width:1250px ;
+    margin: auto;
+    margin-bottom: 30px;
+
+}
+#portalqualid{
+    max-width: 87%;
+    display: block;
+    padding-top: 10px;
+    margin: auto;
+}
+  
+  .centerclaro > img {
+    max-width: 130px;
+    height: auto;
+    display: block;
+    float: left; 
+    margin-right: 20px;
+    margin-left: 30px;
+
+  }
+  nav {
+    margin-top: 10px;
+    margin-bottom: 17px;
+    padding-right: 10px;
+    text-align: right;
+  }
+  nav > a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.9em;
+    padding: 1.1rem;
+    transform: 2ms ease-in;
+    position: relative;
 }
 
-.menu-content {
-  text-transform: uppercase;
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 1.8rem;
-  padding: 0 20px;
+nav > a:before {
+    content: ' ';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0px;
+    height: 2px;
+    background-color: var(--cor0);
+    transition: all 1.7s ease; 
+}
+
+nav > a:hover:before{
+    width: 100%;
+
 }
 
 
+#roteirovendas{
+    max-width: 65%;
+    display: block;
+    padding-top: 10px;
+    margin-left: 20px;
+    margin-top: 50px;
+    margin: right;
+}
+.imagem-container {
+    text-align: center; /* Centraliza a imagem */
+    margin-bottom: 20px; /* Espaço entre a imagem e as curiosidades */
+  }
 
-.menu-content .menu-toggle {
-  display: none;
+
+
+
+ 
+.itens-container {
+    max-width:850px;
+    display: flex;
+    justify-content: left;
+    margin-left: 15px;
+    margin-bottom: 20px;
+    font-weight: bolder;
+    font-size: 0.8em;
+    color: var(--cor3);
 }
 
-.menu-content .list-itens {
-  font-size: 0.7em;
-  display: flex;
-  list-style: none;
-  gap: 10px;
+.item {
+    cursor: pointer;
+    padding: 5px;
+    margin: 5px;
+    transition: all 0.3s ease;
 }
 
-.menu-content .list-itens a {
-  text-decoration: none;
-  color: white;
-  padding: 1.7rem;
-  transform: 2ms ease-in;
-  position: relative;
+.item.expandido {
+    color: var(--cor2);
+    font-weight: bolder;
+
 }
 
-.menu-content .list-itens a:before {
-  content: ' ';
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  width: 0px;
-  height: 3px;
-  background-color: var(--cor4);
-  transition: all 1.5s ease; 
+.texto-container {
+    text-align: left;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    width: 100%;
+    
+
 }
 
-.menu-content .list-itens a:hover:before {
-  width: 100%;
-}
-
-/* Centro - Conteudo Principal */
-
-/* Conteudo central */
-main {
-  height: 93vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.main-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-#center-container {
-  text-align: center;
-}
-
-#click-to-show {
-  font-size: 2rem;
-  letter-spacing: 0.4rem;
-  cursor: pointer;
-}
-
-#sites-container {
-  display: none;
-  margin-top: 20px;
-  padding: 10px;
-}
-
-#sites-container.show-sites {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.btns {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-.btns img{
-  max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho do botão */
-  max-height: 100%; /* Garante que a imagem não ultrapasse o tamanho do botão */
+.item.expandido + .texto-container {
+    max-height: 200px; /* Defina a altura máxima que deseja para a caixa de texto */
 }
 
 section{
@@ -183,6 +168,9 @@ li{
     padding-bottom: 5px;
     text-decoration: none;
 }
+.lih1{
+    font-size: 1.4em;
+}
 p{
     margin-bottom: 10px;
     font-size: 0.9em;
@@ -190,5 +178,40 @@ p{
     margin-left: 25px;
     margin-bottom: 10px;
     
+}
+
+.imagem-container {
+    cursor: pointer;
+    
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    align-items: center;
+    justify-content: center;
+}
+
+.imagem-expandida {
+    position: relative;
+}
+
+.imagem-expandida img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.fechar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
 }
 
