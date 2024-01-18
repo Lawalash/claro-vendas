@@ -16,53 +16,90 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #b32218;
-}
-main{
-    background-color: var(--cor3);
-    min-width:300px ;
-    max-width:824px ;
-    margin: auto;
-    margin-bottom: 30px;
-
-}
-/* PARTE DE CIMA */
-header{
-  background-image: linear-gradient(to bottom,var(--cor2), var(--cor3));
-    padding-top: 15px;
-    padding-bottom: 45px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-#headerh1{
-    color: var(--cor0);
-    margin-top: 10px;
-    margin-bottom: 30px;
-}
-#centerclaro{
-  max-width: 70px;
-  float: left;
-  padding-left: 15px;
-  margin-right: 20px;
-  
-}
-nav {  
-  text-align: left;
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-nav > a {
-  color: var(--cor0);
-  padding: 15px;
-  text-decoration: none;
-  font-weight: bold;
-  transition-duration: .3s;
+   
+    
+ background:  linear-gradient(rgba(22, 22, 22, 0.164), rgba(20, 20, 20, 0.212)), url(../imagens/Claro.jpg) ;
+  background-position: center center;
+  background-size: cover;
+  background-position-y: 0px;
+  background-repeat: no-repeat;
  
 }
-nav > a:hover {
-  background-color:var(--cor3);
-  border-radius: 25px;
+header {
+    width: 100%;
+    height: 2vh;
+    padding-top: 35px;
+    margin-bottom: 20px;
+    
+    
+  }
+.menu-content {
+    text-transform: uppercase;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    padding: 0 20px;
+  }
+
+
+.menu-content .menu-toggle {
+    display: none;
 }
+.logo {
+    font-size: 1.2rem;
+    letter-spacing: 0.4rem;
+    cursor: pointer;
+    color: white;
+
+}
+
+.menu-content .list-itens {
+    margin-right: 10px;
+    display: flex;
+    list-style: none;
+    gap: 10px;
+  }
+  
+  .menu-content .list-itens a {
+    text-decoration: none;
+    color: white;
+    padding: 0.7rem;
+    transform: 2ms ease-in;
+    position: relative;
+  }
+  
+  .menu-content .list-itens a:before {
+    content: ' ';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0px;
+    height: 3px;
+    background-color: var(--cor2);
+    transition: all 1.5s ease; 
+  }
+  
+  .menu-content .list-itens a:hover:before {
+    width: 100%;
+  }
+
+  
+
+  main {
+   
+    min-width: 300px;
+    max-width: 824px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding-top: 20px;
+    position: relative;
+    z-index: 1; /* Para garantir que a tabela fique acima da imagem de fundo */
+}
+
+
+
 #check{
   margin-left: 20px;
   background-color: var(--cor3);

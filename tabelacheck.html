@@ -7,40 +7,32 @@
     <link rel="stylesheet" href="estilos/checklist.css">
 </head>
 <body>
-    <header>
-      <a href="home.html"><img id="centerclaro" src="imagens/claroh.png" alt="logoclaro"></a>
+  <header>
+    <div class="menu-content">
+        <div class="menu-toggle">
+            
+        </div>
+        <a href="home.html">
+          <h1 class="logo">TABELA DE PREÇO</h1>
+        </a>
+
         
-        <nav>
-           <a href="tabelainternet.html">Internet</a>
-           <a href="tabelaclarotv.html">Claro TV +</a>
-           <a href="tabelamovel.html">Móvel</a>
-           <a href="tabelafixo.html">Fixo</a>
-           <a id="check"  href="tabelacheck.html">CHECKLIST</a>
+        <nav class="header-menu">
+            <ul class="list-itens">
+                <li><a href="tabelainternet.html">INTERNET</a></li>
+                <li><a href="tabelaclarotv.html">CLARO TV BOX</a></li>
+                <li><a href="tabelamovel.html">MÓVEL</a></li>
+                <li><a onclick="return false;" href="tabelafixo.html">FIXO</a></li>
+                <li><a href="tabelacheck.html">CHECKLIST</a></li>
+            </ul>
         </nav>
-    </header>
-    <script>
-      function calculateProportional() {
-        var startDate = new Date(document.getElementById('startDate').value);
-        var dueDate = new Date(document.getElementById('dueDate').value);
-        var productValue = parseFloat(document.getElementById('productValue').value);
-    
-        if (isNaN(productValue) || startDate > dueDate) {
-          alert('Por favor, preencha os campos corretamente.');
-          return;
-        }
-    
-        var timeDifference = dueDate.getTime() - startDate.getTime();
-        var daysUsed = Math.ceil(timeDifference / (1000 * 3600 * 24));
-    
-        var dailyCost = productValue / 30; // Considerando um mês de 30 dias
-        var proportionalCost = dailyCost * daysUsed;
-    
-        document.getElementById('result').innerHTML = 'Custo Proporcional: R$ ' + proportionalCost.toFixed(2);
-      }
-    </script>
+    </div>
+</header>
+
+
     
     <Main>
-        <div class="checklist-container">
+        <div class="checklist-container" id="claroFixoTab">
 
             <div class="checklist-item">
               <input type="checkbox" id="item1">
@@ -228,7 +220,7 @@
                 <input type="checkbox" id="item10">
                 <label class="lab1" for="item10">Depois disso é só confirmar com ele se ele aceita a adesão do plano com sim ou não e daí você fecha o contrato e tabula tudo no EVA antes da ligação cair. </label>
                 <div class="checklist-content">
-                  <p>Poderia me confirmar com <strong>SIM</strong> ou <strong>NAO</strong>, se voce aceita a adesão do plano ofertado, pra deixar aqui registrado? por favor.</p>
+                  <p>Poderia me confirmar com <strong>SIM</strong> ou <strong>NAO</strong>, se voce aceita a adesão do plano ofertado, pra deixar aqui registrado? por favor. Vai gerar um número do contrato, peço que aguarde pois irei te falar.</p>
                 </div>
               </div>
     </Main>
@@ -253,6 +245,39 @@
           document.getElementById("result").innerHTML = "Valor Proporcional: R$ " + proportionalValue.toFixed(2);
       }
   </script>
+
+<script>
+  function calculateProportional() {
+    var startDate = new Date(document.getElementById('startDate').value);
+    var dueDate = new Date(document.getElementById('dueDate').value);
+    var productValue = parseFloat(document.getElementById('productValue').value);
+
+    if (isNaN(productValue) || startDate > dueDate) {
+      alert('Por favor, preencha os campos corretamente.');
+      return;
+    }
+
+    var timeDifference = dueDate.getTime() - startDate.getTime();
+    var daysUsed = Math.ceil(timeDifference / (1000 * 3600 * 24));
+
+    var dailyCost = productValue / 30; // Considerando um mês de 30 dias
+    var proportionalCost = dailyCost * daysUsed;
+
+    document.getElementById('result').innerHTML = 'Custo Proporcional: R$ ' + proportionalCost.toFixed(2);
+  }
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    var claroFixoTab = document.querySelector('.list-itens li:nth-child(4) a');
+    var claroFixoTable = document.getElementById('claroFixoTab');
+
+    claroFixoTab.addEventListener('click', function () {
+        claroFixoTable.style.display = (claroFixoTable.style.display === 'none' || claroFixoTable.style.display === '') ? 'block' : 'none';
+    });
+});
+</script>
+
 
     
 </body>

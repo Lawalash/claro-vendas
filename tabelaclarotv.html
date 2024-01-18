@@ -4,16 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ClaroTV + </title>
-    <link rel="stylesheet" href="estilos/tabela.css">
+    <link rel="stylesheet" href="estilos/tabela-tvbox.css">
     <style>
-    main{
-        background-color: var(--cor3);
-        min-width:300px ;
-        max-width:824px ;
-        margin: auto;
-        margin-bottom: 30px;
-
-    }
+   
     #mescla{
         text-align: center;
         font-weight: bolder;
@@ -31,92 +24,113 @@
 </head>
 <body>
     <header>
-        <a href="home.html"><img id="centerclaro" src="imagens/claroh.png" alt="logoclaro"></a>
-        
-        <nav>
-           <a href="tabelainternet.html">Internet</a>
-           <a href="tabelaclarotv.html" id="escuroA">Claro TV +</a>
-           <a href="tabelamovel.html">Móvel</a>
-           <a href="tabelafixo.html">Fixo</a>
-           <a class="check" href="tabelacheck.html">CHECKLIST</a>
-        </nav>
-    </header>
+        <div class="menu-content">
+            <div class="menu-toggle">
+                
+            </div>
+            <a href="home.html">
+                <h1 class="logo">TABELA DE PREÇO</h1>
+              </a>
 
+            
+            <nav class="header-menu">
+                <ul class="list-itens">
+                    <li><a href="tabelainternet.html" onclick="return false;">INTERNET</a></li>
+                    <li><a href="tabelaclarotv.html" onclick="return false;">CLARO TV BOX</a></li>
+                    <li><a href="tabelamovel.html">MÓVEL</a></li>
+                    <li><a href="tabelafixo.html">FIXO</a></li>
+                    <li><a href="tabelacheck.html">CHECKLIST</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     
     <main>
-        <table class="center">
-            <thead>
-                <tr>
-                    <th>Produtos</th>
-                    <th>Boleto</th>
-                    <th>Débito automático</th>
-                    <th>Ponto adicional</th>
-                </tr>
-            </thead>
-            <tbody>
-               
-                <tr>
-                    <th> TV - BOX  CLARO TV+</th>
-                    <td>R$114,90</td>
-                    <td>R$109,90</td>
-                    <td>BOX R$ 59,90</td>
-                </tr>
-                <tr class="plano">
-                    <th>OFERTA RENT: TV - BOX CLARO TV+ (apenas globoplay)</th>
-                    <td style="text-align: center; font-size: 1.1em;" >R$84,90</td>
-                    <td style="text-align: center; font-size: 1.1em;" >R$79,90</td>
-                    <td style="text-align: center; font-size: 1.1em;">R$59,90</td>
-                 </tr>
-                <tr>
-                    <th> TV - 4K CLARO TV+</th>
-                    <td>R$124,90</td>
-                    <td>R$119,90</td>
-                    <td>4K R$59,90 | HD R$49,90
-                    </td>
-                </tr>
-                <tr>
-                    <th>SOUNDBOX -  CLARO TV + (Cabo)</th>
-                    <td>R$154,90</td>
-                    <td>R$ 149,90</td>
-                    <td>SOUNDBOX R$ R$89,90 </td>
-                </tr>
-                
-                <tr>
-                    <th colspan="4" style="text-align: center;">Todo serviço de TV box vem com o GLOBOPLAY + NETFLIX (PADRÃO COM ANUNCIO) gratuito + CANAIS AO VIVO</th>
-                </tr>
-                <tr>
-                    <th colspan="4" style="text-align: center;">OBS: Rentabilidade apenas para novos cliente. Se for da base segue com a tabela em branco.</th>
-                </tr>
-            </tbody>
-        </table>
-        <h1 class="h1corpo">Exemplos de combos</h1>
-
-        <table>
-            <thead>
-                <tr>
-                    <th>Produtos</th>
-                    <th>Boleto</th>
-                    <th>Débito automático</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <th>TV - BOX CLARO TV + Claro Net Celular - controle 13GB</th>
-                    <td>-</td>
-                    <td>-</td>
-                </tr>
-                <tr>
-                    <th>TV - 4K CLARO TV + Claro Net Celular - controle 15GB </th>
-                    <td>-</td>
-                    <td>-</td>
-                </tr>
-                <tr>
-                    <th>SOUNDBOX - CLARO TV + (c/s cabo) Claro Net Celular - controle 15GB </th>
-                    <td>-</td>
-                    <td>-</td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="table-container" id="claroTvBoxTable">
+            <table class="center">
+                <thead>
+                    <tr>
+                        <th>Produtos</th>
+                        <th>Boleto</th>
+                        <th>Débito automático</th>
+                        <th>Ponto adicional</th>
+                    </tr>
+                </thead>
+                <tbody>
+            
+                    <tr>
+                        <th> TV - BOX  CLARO TV+</th>
+                        <td>R$114,90</td>
+                        <td>R$109,90</td>
+                        <td>BOX R$ 59,90</td>
+                    </tr>
+                    <tr class="plano">
+                        <th>OFERTA RENT: TV - BOX CLARO TV+ (apenas globoplay)</th>
+                        <td style="text-align: center; font-size: 1.1em;" >R$84,90</td>
+                        <td style="text-align: center; font-size: 1.1em;" >R$79,90</td>
+                        <td style="text-align: center; font-size: 1.1em;">R$59,90</td>
+                     </tr>
+                    <tr>
+                        <th> TV - 4K CLARO TV+</th>
+                        <td>R$124,90</td>
+                        <td>R$119,90</td>
+                        <td>4K R$59,90 | HD R$49,90
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>SOUNDBOX -  CLARO TV + (Cabo)</th>
+                        <td>R$154,90</td>
+                        <td>R$ 149,90</td>
+                        <td>SOUNDBOX R$ R$89,90 </td>
+                    </tr>
+            
+                    <tr>
+                        <th colspan="4" style="text-align: center;">Todo serviço de TV box vem com o GLOBOPLAY + NETFLIX (PADRÃO COM ANUNCIO) gratuito + CANAIS AO VIVO</th>
+                    </tr>
+                    <tr>
+                        <th colspan="4" style="text-align: center;">OBS: Rentabilidade apenas para novos cliente. Se for da base segue com a tabela em branco.</th>
+                    </tr>
+                </tbody>
+            </table>
+            <h1 class="h1corpo">Exemplos de combos</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Produtos</th>
+                        <th>Boleto</th>
+                        <th>Débito automático</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>TV - BOX CLARO TV + Claro Net Celular - controle 13GB</th>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <th>TV - 4K CLARO TV + Claro Net Celular - controle 15GB </th>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <th>SOUNDBOX - CLARO TV + (c/s cabo) Claro Net Celular - controle 15GB </th>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var claroTvBoxTab = document.querySelector('.list-itens li:nth-child(2) a');
+            var claroTvBoxTable = document.getElementById('claroTvBoxTable');
+    
+            claroTvBoxTab.addEventListener('click', function () {
+                claroTvBoxTable.style.display = (claroTvBoxTable.style.display === 'none' || claroTvBoxTable.style.display === '') ? 'block' : 'none';
+            });
+        });
+    </script>
 </body>
 </html>
