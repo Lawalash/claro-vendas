@@ -22,7 +22,7 @@
     </header>
 
     <main>
-        <div class="imagem-container">
+        <div class="imagem-container" id="texto-container-1">
             <img id="roteirovendas" src="imagens/material-apoio.png" alt="qualidade-portal">
         </div>
 
@@ -90,7 +90,7 @@
             <p>Se ainda ficou com dúvida, assista o vídeo abaixo:</p>
 
             <article>
-                <div class="video">
+                <div class="video" onclick="toggleVideo()">
                     <iframe width="560" height="315" src="video/instalação.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     
                 </div>
@@ -188,6 +188,37 @@
             });
         }
     </script>
+
+<script>
+    // Função para exibir/ocultar texto
+    function toggleTexto(item) {
+        var items = document.querySelectorAll('.item');
+        var textos = document.querySelectorAll('.texto-container');
+
+        items.forEach(function (el, index) {
+            if (index + 1 == item) {
+                el.classList.toggle('expandido');
+                textos[index].style.maxHeight = el.classList.contains('expandido') ? textos[index].scrollHeight + 'px' : '0';
+            } else {
+                el.classList.remove('expandido');
+                textos[index].style.maxHeight = '0';
+            }
+        });
+    }
+
+    // Função para exibir/ocultar vídeo
+    function toggleVideo() {
+        var videoFrame = document.getElementById('videoFrame');
+        var videoSrc = videoFrame.getAttribute('src');
+
+        if (!videoSrc) {
+            // Adicione o link do vídeo aqui
+            videoFrame.setAttribute('src', 'coloque_o_link_do_video_aqui');
+        } else {
+            videoFrame.removeAttribute('src');
+        }
+    }
+</script>
 
 </body>
 </html>
