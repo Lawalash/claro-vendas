@@ -28,12 +28,12 @@ html {
   width: 100vw;
   height: 100vh;
   font-size: 62.5%;
-  color: white;
+  
   font-family: 'Lato', sans-serif;
 }
 
 body {
-  background: linear-gradient(rgba(22, 22, 22, 0.473), rgba(20, 20, 20, 1)), url(../imagens/claro.jpeg);
+  background: linear-gradient(rgba(112, 112, 112, 0.384), rgba(20, 20, 20, 1)), url(../imagens/claro.jpeg);
   background-position: center center;
   background-size: cover;
   background-position-y: 0px;
