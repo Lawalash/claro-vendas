@@ -5,24 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Móvel</title>
     <link rel="stylesheet" href="estilos/tabela-movel.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
-       
-        #mescla{
+        .table-controle th, .table-controle td {
             text-align: center;
-            font-weight: bolder;
         }
-
-        
-        .plano{
-            background-color: #DA291C;
-            color: white;
-            
-        }
-        .center{
-        margin:auto;
-        margin-bottom: 20px;
-        }
-    
         </style>
 </head>
 <body>
@@ -51,176 +38,185 @@
     
     <main>
         <div class="table-container" id="claroMovelTab">
-            <table class="center">
-                <thead>
+
+            <div class="container mt-5">
+                
+                <table class="table table-bordered table-controle">
+                    <thead class="thead-dark">
+                        <tr class="trh1">
+                            <th colspan="7">PLANO CONTROLE</th>
+                        </tr>
+                        <tr>
+                            <th scope="col">PRODUTO</th>
+                            <th scope="col">BONUS DE REDES SOCIAIS E APP DE VIDEOS</th>
+                            <th scope="col">PARA REDES SOCIAIS E APPS DE VIDEOS</th>
+                            <th scope="col">PREÇO NO BOLETO</th>
+                            <th scope="col">PREÇO NO DÉBITO</th>
+                            <th scope="col">APP ILIMITADO</th>
+                            <th scope="col">ASSINATURA INCLUSA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Claro Net Celular - Controle 20GB</td>
+                            <td>3GB</td>
+                            <td>
+                                
+                                <img class="logo-app" src="imagens/icones/icon-youtube.png" alt="WhatsApp">
+                            
+                            </td>
+                            <td>R$54,90</td>
+                            <td>R$49,90</td>
+                            <td>
+                                
+                                <img class="logo-app" src="imagens/icones/icon-wpp.png" alt="WhatsApp">
+                            
+                            </td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Claro Net Celular - Controle 25GB</td>
+                            <td>5GB</td>
+                            <td rowspan="2">
+
+                                <img class="logo-app" src="imagens/icones/icon-youtube.png" alt="WhatsApp">
+                                <img class="logo-app" src="imagens/icones/icon-facebook.png" alt="WhatsApp">
+                                <img class="logo-app" src="imagens/icones/icon-tiktok.png" alt="WhatsApp">
+                                <img class="logo-app" src="imagens/icones/icon-twitter.png" alt="WhatsApp">
+                                <img class="logo-app" src="imagens/icones/icon-instagram.png" alt="WhatsApp">
+                            
+                            </td>
+                            <td>R$64,90</td>
+                            <td>R$59,90</td>
+                            <td>
+                                <img class="logo-app" src="imagens/icones/icon-wpp.png" alt="WhatsApp">
+                            
+                            </td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Claro Net Celular - Controle 30GB</td>
+                            <td>5GB</td>
+                            <td>R$74,90</td>
+                            <td>R$69,90</td>
+                            <td>
+                                
+                                <img class="logo-app" src="imagens/icones/icon-wpp.png" alt="WhatsApp">
+                            
+                            </td>
+                            <td>POKEMON GO, ASPHALT 9 LEGENDS E GARENA FREE FIRE + PERKS (BRINDES DENTRO DOS JOGOS COMO ARMAS, SKINS, MAPAS, ETC)</td>
+                        </tr>
+                        
+                        
+                        
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="container mt-5">
+                
+                <table class="table table-bordered">
+                    <thead class="thead-dark">
+                        <tr class="trh1">
+                            <th colspan="7">PLANO PÓS PAGO</th>
+                        </tr>
+                        <tr>
+                            <th scope="col">PRODUTO</th>
+                            <th scope="col">FRANQUIA EXTRA PLAY</th>
+                            <th scope="col">FRANQUIA TOTAL</th>
+                            <th scope="col">PREÇO NO BOLETO</th>
+                            <th scope="col">PREÇO NO DÉBITO</th>
+                            <th scope="col">PASSAPORTE INCLUSO</th>
+                            <th scope="col">APPS PARA UTILIZAR</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Claro Net Celular - Pós pago 25GB</td>
+                            <td>25GB</td>
+                            <td>50GB</td>
+                            <td>R$89,90</td>
+                            <td>R$79,90</td>
+                            <td>AMÉRICAS TITULAR</td>
+                            <td rowspan="5">
+                                <img class="logo-app2" src="imagens/icones/icon-disney.png">
+                                <img class="logo-app2" src="imagens/icones/icon-netflix.png">
+                                <img class="logo-app2" src="imagens/icones/icon-youtube.png">
+                                <img class="logo-app2" src="imagens/icones/icon-clarotv.png">
+                                <img class="logo-app2" src="imagens/icones/icon-hbo.png">
+                                <img class="logo-app2" src="imagens/icones/icon-disney.png">
+                                <img class="logo-app2" src="imagens/icones/icon-globoplay.png">
+                                <img class="logo-app2" src="imagens/icones/icon-tiktok.png">
+                                <img class="logo-app2" src="imagens/icones/icon-star.png">
+                                <img class="logo-app2" src="imagens/icones/icon-instagram.png">
+                                <img class="logo-app2" src="imagens/icones/icon-facebook.png">
+                                <!-- Adicione mais logos conforme necessário -->
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Claro Net Celular - Pós pago 50GB</td>
+                            <td>50GB</td>
+                            <td>100GB</td>
+                            <td>R$119,90</td>
+                            <td>R$109,90</td>
+                            <td>AMÉRICAS TITULAR E DEPENDENTE</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Claro Net Celular - Pós pago 100GB</td>
+                            <td>100GB</td>
+                            <td>200GB</td>
+                            <td>R$169,90</td>
+                            <td>R$159,90</td>
+                            <td>AMÉRICAS TITULAR E DEPENDENTE</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Claro Net Celular - Pós pago 150GB</td>
+                            <td>150GB</td>
+                            <td>300GB</td>
+                            <td>R$219,90</td>
+                            <td>R$209,90</td>
+                            <td>AMÉRICAS TITULAR E DEPENDENTE</td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Claro Net Celular - Pós pago 300GB</td>
+                            <td>300GB</td>
+                            <td>600GB</td>
+                            <td>R$319,90</td>
+                            <td>R$309,90</td>
+                            <td>AMÉRICAS E EUROPA TITULAR E DEPENDENTE</td>
+                            
+                        </tr>
+                        <tr>
+                            <th style="text-align: center; font-size: 1.2em;"><strong>DEPENDENTE</strong></th>
+                            <td colspan="6" style="text-align: center; font-size: 1.2em;">R$50,00</td>
+                        </tr>
+                       <tr>
+                        <td>50GB</td>
+                        <td colspan="4">Não tem dependente gratuito, mas pode adquiri  1 pago</td>
+                       </tr>
+                       <tr>
+                        <td>100GB</td>
+                        <td colspan="4">Não tem dependente gratuito, mas pode adquiri  2 pago</td>
+                       </tr>
+                       <tr>
+                        <td>200GB</td>
+                        <td colspan="4">Tem direito a 1 gratuito, e pode adquiri + 2 pago</td>
+                       </tr>
+                       <tr>
+                        <td>300GB</td>
+                        <td colspan="4">Tem direito a 2 gratuito, e pode adquiri 2 pago</td>
+                       </tr>
+                       <tr>
+                        <td>600GB</td>
+                        <td colspan="4">Tem direito a 3 gratuito, e pode adquiri 2 pago</td>
+                       </tr>
+                    </tbody>
+                </table>
+            </div>
             
-                    <tr class="plano">
-                        <th colspan="3">PLANO CONTROLE</th>
-                    </tr>
-                    <tr>
-            
-                        <th>Produtos</th>
-                        <th>Boleto</th>
-                        <th>Débito automático</th>
-                    </tr>
-                </thead>
-                <tbody>
-            
-                    <tr>
-                        <th> Claro Net Celular - controle 13GB + 7GB</th>
-                        <td>R$54,90</td>
-                        <td>R$49,90</td>
-                    </tr>
-                    <tr>
-                        <th> Claro Net Celular - controle 15GB + 10GB</th>
-                        <td>R$64,90</td>
-                        <td>R$59,90</td>
-                    </tr>
-                    <tr class="plano">
-                        <th>Controle 8GB + 7GB de bônus (RENT dcc)</th>
-                        <td style="text-align: center; font-size: 1.1em;" colspan="2">R$34,90</td>
-            
-                     </tr>
-                     <tr>
-                        <th>PROCEDIMENTO DE CADASTRO</th>
-                        <td style="text-align: center;" colspan="2">P15$ CONTROLE 8GB S/AP RENT </td>
-            
-                    </tr>
-                    <tr class="plano">
-                        <th>OFERTA RENT</th>
-                        <td>15GB PLANO + 10GB PORTABILIDADE + MINUTOS ILIMITADOS</td>
-                        <td>R$44,90</td>
-                    </tr>
-                    <tr>
-                        <th>PROCEDIMENTO DE CADASTRO</th>
-                        <td style="text-align: center;" colspan="2">P15$ CONTROLE 15GB S/AP RENT 23</td>
-            
-                    </tr>
-                    <tr>
-                        <td colspan="3" style="text-align: center;">OBS: Rentabilidade apenas para novos cliente. Se for da base segue com a tabela em branco.</td>
-                    </tr>
-                </tbody>
-            </table>
-            <table class="center">
-                <thead>
-            
-                    <tr class="plano">
-                        <th colspan="3">PLANO PÓS PAGO</th>
-                    </tr>
-                    <tr>
-            
-                        <th>Produtos</th>
-                        <th>Boleto</th>
-                        <th>Débito automático</th>
-                    </tr>
-                </thead>
-                <tbody>
-            
-                    <tr>
-                        <th>Claro Net Celular - Pós pago 50GB</th>
-                        <td>R$109,90</td>
-                        <td>R$99,90</td>
-                    </tr>
-                    <tr>
-                        <th>Claro Net Celular - Pós pago 100GB</th>
-                        <td>R$159,90</td>
-                        <td>R$149,90</td>
-                    </tr>
-                    <tr>
-                        <th>Claro Net Celular - Pós pago 200GB</th>
-                        <td>R$209,90</td>
-                        <td>R$199,90</td>
-                    </tr>
-                    <tr>
-                        <th>Claro Net Celular - Pós pago 400GB</th>
-                        <td>R$309,90</td>
-                        <td>R$299,90</td>
-                    </tr>
-                    <tr class="plano">
-                        <th>OFERTA RENT 25GB PLANO + 25GB EXTRAPLAY + MINUTOS ILIMITADOS</th>
-                        <td>R$89,90</td>
-                        <td>R$79,90</td>
-                    </tr>
-                    <tr>
-                        <th>PROCEDIMENTO DE CADASTRO</th>
-                        <td style="text-align: center;" colspan="2">P10$ CONTA 25GB S/AP RENT</td>
-            
-                    </tr>
-                    <tr class="plano">
-                        <th>OFERTA RENT: 50GB PLANO + 50GB EXTRAPLAY + MINUTOS ILIMITADOS</th>
-                        <td>R$109,90 </td>
-                        <td>R$99,90 </td>
-                    </tr>
-                    <tr>
-                        <th>PROCEDIMENTO DE CADASTRO</th>
-                        <td style="text-align: center;" colspan="2">P5$ CONTA 50GB S/AP RENT </td>
-            
-                    </tr>
-                    <tr class="plano">
-                        <th>OBSERVAÇÃO SOBRE OFERTA RENT</th>
-                        <td colspan="2">EXCLUSIVO MEDIANTE A PORTABILIDADE E ATIVAÇÃO DE UM DEPENDENTE POR R$ 50,00.</td>
-            
-                    </tr>
-                    <tr>
-                        <td colspan="3" style="text-align: center;">OBS: Rentabilidade apenas para novos cliente. Se for da base segue com a tabela em branco.</td>
-                    </tr>
-            
-                </tbody>
-            </table>
-            
-            <h1 class="h1corpo">Exemplos de combos controle</h1>
-            <table>
-                <thead>
-                    <tr>
-            
-                        <th>Produtos</th>
-                        <th>Boleto</th>
-                        <th>Débito automático</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th>TV - BOX CLARO TV + Claro Net Celular - controle 13GB</th>
-                        <td>-</td>
-                        <td>-</td>
-                    </tr>
-                    <tr>
-                        <th>TV - 4K CLARO TV + Claro Net Celular - controle 15GB </th>
-                        <td>-</td>
-                        <td>-</td>
-                    </tr>
-                    <tr>
-                        <th>SOUNDBOX - CLARO TV + (c/s cabo) Claro Net Celular - controle 15GB </th>
-                        <td>-</td>
-                        <td>-</td>
-                    </tr>
-            
-                </tbody>
-            </table>
-            <h1 class="h1corpo">Exemplos de combos PÓS PAGO</h1>
-            <table>
-                <thead>
-                    <tr>
-            
-                        <th>Produtos</th>
-                        <th>Boleto</th>
-                        <th>Débito automático</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th>TV - BOX CLARO TV + Claro Net Celular - Pós pago 50GB</th>
-                        <td>-</td>
-                        <td>-</td>
-                    </tr>
-                    <tr>
-                        <th>SOUNDBOX - CLARO TV + (c/s cabo) Claro Net Celular - Pós pago 100GB	</th>
-                        <td>-</td>
-                        <td>-</td>
-                    </tr>
-            
-                </tbody>
-            </table>
         </div>
     </main>
 
@@ -234,6 +230,10 @@
             });
         });
     </script>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     
 </body>
 </html>

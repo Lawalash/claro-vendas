@@ -4,55 +4,51 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-  }
+}
 
 :root { 
     --cor0:white;
     --cor1:black;
     --cor2:#DA291C;
     --cor3:#b32218;
-   
 }
 
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #b32218;
- background:  linear-gradient(rgba(22, 22, 22, 0.164), rgba(20, 20, 20, 0.212)), url(../imagens/claro-movel.png);
-
-  background-position: center center;
-  background-size: cover;
-  background-position-y: 0px;
-  background-repeat: no-repeat;
- 
+    background:  linear-gradient(rgba(22, 22, 22, 0.164), rgba(20, 20, 20, 0.212)), url(../imagens/claro-movel.png);
+    background-position: center center;
+    background-size: cover;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
 }
+
 header {
     width: 100%;
     height: 2vh;
     padding-top: 35px;
     margin-bottom: 45px;
-    
-    
-  }
+}
+
 .menu-content {
     text-transform: uppercase;
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.2rem;
+    font-size: 1rem; /* Ajuste o tamanho da fonte aqui */
     padding: 0 20px;
-  }
-
+}
 
 .menu-content .menu-toggle {
     display: none;
 }
+
 .logo {
     font-size: 1.2rem;
     letter-spacing: 0.4rem;
     cursor: pointer;
     color: white;
-
 }
 
 .menu-content .list-itens {
@@ -60,17 +56,17 @@ header {
     display: flex;
     list-style: none;
     gap: 10px;
-  }
-  
-  .menu-content .list-itens a {
+}
+
+.menu-content .list-itens a {
     text-decoration: none;
     color: white;
     padding: 0.7rem;
     transform: 2ms ease-in;
     position: relative;
-  }
-  
-  .menu-content .list-itens a:before {
+}
+
+.menu-content .list-itens a:before {
     content: ' ';
     position: absolute;
     bottom: 0px;
@@ -79,18 +75,15 @@ header {
     height: 3px;
     background-color: var(--cor2);
     transition: all 1.5s ease; 
-  }
-  
-  .menu-content .list-itens a:hover:before {
+}
+
+.menu-content .list-itens a:hover:before {
     width: 100%;
-  }
+}
 
-  
-
-  main {
-   
+main {
     min-width: 300px;
-    max-width: 824px;
+    max-width: 1300px;
     margin: auto;
     margin-bottom: 30px;
     padding-top: 20px;
@@ -98,47 +91,70 @@ header {
     z-index: 1; /* Para garantir que a tabela fique acima da imagem de fundo */
 }
 
-#escuroA{
+#escuroA {
     background-color: var(--cor3);
     border-radius: 25px;
 }
 
 .table-container {
     position: relative;
-    
     margin: auto;
     display: none; /* Inicialmente esconde a tabela */
     z-index: 1; /* Posiciona acima do plano de fundo */
 }
-table{
+
+table {
     background-color: var(--cor0);
     border-collapse: collapse;
-    
 }
-thead{
-    font-size: 1.3em;
+
+thead {
+    font-size: 1.2em; /* Ajuste o tamanho da fonte aqui */
 }
-.check{
+
+.check {
     margin-left: 20px;
-    
 }
-#check:hover{
+
+#check:hover {
     color: black;
 }
-th{
-    font-size: 0,8em;
+
+th {
+    font-size: 0.8em;
 }
-.tr1{
+
+.tr1 {
     background-color: rgb(207, 207, 207);
 }
-th,td {
+
+th, td {
     border: 1px solid black;
     padding: 10px;
 }
 
-.h1corpo{
+.h1corpo {
     color: white;
     margin-top: 25px;
     margin-bottom: 25px;
     text-align: center;
+}
+
+.trh1{
+    font-size: 1.6em;
+    text-align: center;
+}
+.logo-app{  
+    max-width: 30px;  /* Ajuste o tamanho máximo conforme necessário */
+    height: auto;
+    display: block;
+    margin:  auto; 
+    margin-top: 30px;
+}
+.logo-app2{  
+    max-width: 45px;  /* Ajuste o tamanho máximo conforme necessário */
+    height: auto;
+    display: block;
+    margin:  auto; 
+    margin-top: 30px;
 }
