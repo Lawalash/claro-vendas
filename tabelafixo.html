@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fixo</title>
     <link rel="stylesheet" href="estilos/tabela-fixo.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
         #mescla{
             text-align: center;
@@ -31,6 +32,14 @@
         .center{
         margin:auto;
         }
+        #center{
+        vertical-align: middle;
+        padding-left: 85px;
+        font-size: 1.1em;
+    }
+        #center1{
+            text-align: center;
+    }
     
         </style>
 </head>
@@ -59,46 +68,42 @@
 
     <main>
         <div class="table-container" id="claroFixoTab">
-            <table class="center">
-                <thead>
-            
-                    <tr class="plano">
-                        <th colspan="3">TELEFONE FIXO</th>
-                    </tr>
-                    <tr>
-            
-                        <th>Produtos</th>
-                        <th>Boleto</th>
-                        <th>Débito automático</th>
-                    </tr>
-                </thead>
-                <tbody>
-            
-                    <tr>
-                        <th> ILIMITADO BRASIL TOTAL</th>
-                        <td colspan="2" class="valorcent">R$30,00</td>
-            
-                    </tr>
-                    <tr>
-                        <th> ILIMITADO MUNDO TOTAL</th>
-                        <td colspan="2" class="valorcent">R$60,00</td>
-            
-                    </tr>
-                    <tr>
-                        <th>GRÁTIS:</th>
-                        <td colspan="2" class="obs1">Apenas quando o cliente aceita oferta de <strong>INTERNET</strong> e <strong>MÓVEL</strong>, ou <strong>INTERNET</strong>, <strong>MÓVEL</strong>, <strong>TV</strong></td>
-                    </tr>
-                    <tr>
-                        <th >Fidelidade</th>
-                        <td colspan="2" class="obs1"><strong>Por 12 meses</strong></td>
-                    </tr>
-                    <tr class="obs">
-                        <th>Multa</th>
-                        <td colspan="2">R$200,00 proporcional aos meses restantes</td>
-                    </tr>
-            
-                </tbody>
-            </table>
+
+            <div class="container mt-5">
+                <table class="table table-bordered table-controle">
+                    <thead class="thead-dark" id="center1">
+                        <tr>
+                            <tr class="trh1">
+                             <th colspan="7">TELEFONE FIXO</th>
+                            </tr>
+                            <th scope="col">Produtos</th>
+                            <th scope="col">No boleto</th>
+                            <th scope="col">No débito automático</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th id="center">ILIMITADO BRASIL TOTAL</th>
+                            <td colspan="2" style="text-align: center;">R$35,00</td>
+                            
+                            
+                        </tr>
+                        <tr>
+                            <th id="center">ILIMITADO MUNDO TOTAL</th>
+                            <td colspan="2" style="text-align: center;">R$65,00</td>
+                            
+                            
+                        </tr>
+                        
+                        
+                        <tr>
+                            <th >Cliente consegue o ilimitado brasil total por R$5,00 quando:</th>
+                            <td colspan="6" style="text-align: center;"> o cliente aceita oferta de INTERNET e MÓVEL, ou INTERNET, MÓVEL, TV</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
         </div>
         <script>
             document.addEventListener('DOMContentLoaded', function () {
@@ -110,5 +115,9 @@
                 });
             });
         </script>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

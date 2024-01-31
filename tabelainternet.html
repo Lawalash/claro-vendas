@@ -9,9 +9,16 @@
     
     <style>
         .plano{
-            background-color: #DA291C;
-            color: white;
-            
+            background-color: darkgray;
+            color: black; 
+        }
+        #center{
+            vertical-align: middle;
+            padding-left: 85px;
+            font-size: 1.1em;
+        }
+        #center1{
+            text-align: center;
         }
     </style>
 </head>
@@ -42,71 +49,81 @@
     
     <main>
         <div class="table-container" id="internetTable">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Produtos</th>
-                        <th>MegaBytes</th>
-                        <th>Download</th>
-                        <th>Upload</th>
-                        <th>No boleto</th>
-                        <th>No débito automático</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th rowspan="4">Internet</th>
-                        <td>750 Mega (Globoplay)</td>
-                        <td>até 750 Mega </td>
-                        <td>50 Mega </td>
-                        <td>R$154,90</td>
-                        <td>R$149,90</td>
-                    </tr>
-                    <tr>
-                        <td>500 Mega (Globoplay)</td>
-                        <td>até 500 Mega</td>
-                        <td>50 Mega </td>
-                        <td>R$124,90</td>
-                        <td>R$119,90</td>
-                    </tr>
-                    <tr>
-                        <td>350 Mega (Globoplay)</td>
-                        <td> até 350 Mega </td>
-                        <td>35 Mega </td>
-                        <td>R$104,90</td>
-                        <td>R$99,90</td>
-                    </tr>
-                    <tr>
-                        <td>250 Mega</td>
-                        <td>até 250 Mega </td>
-                        <td>25 Megas </td>
-                        <td>R$84,90</td>
-                        <td>R$79,90</td>
             
-                    </tr>
-                    <tr class="plano" >
-                        <th rowspan="2" colspan="1">OFERTA RENT *apenas para novos clientes*</th>
-                        <td>500 Mega (Globoplay)</td>
-                        <td>500 Mega </td>
-                        <td> 50 Mega </td>
-                        <td>R$104,90</td>
-                        <td>R$99,90</td>
-                    </tr>
-                    <tr class="plano">
-                        <td>350 Mega (Globoplay)</td>
-                        <td>350 Mega </td>
-                        <td>35 Mega </td>
-                        <td>R$94,90</td>
-                        <td>R$89,90</td>
-                    </tr>
-            
-            
-                 
-                    <tr>
-                        <td colspan="6" style="text-align: center;">OBS: Rentabilidade apenas para novos cliente. Se for da base segue com a tabela em branco ou vai pra oferta do dia.</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="container mt-5">
+                <table class="table table-bordered table-controle">
+                    <thead class="thead-dark" id="center1">
+                        <tr>
+                            <tr class="trh1">
+                             <th colspan="7">INTERNET RESIDENCIAL</th>
+                            </tr>
+                            <th scope="col">Produtos</th>
+                            <th scope="col">MegaBytes</th>
+                            <th scope="col">Download</th>
+                            <th scope="col">Upload</th>
+                            <th scope="col">No boleto</th>
+                            <th scope="col">No débito automático</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th rowspan="4" id="center">INTERNET</th>
+                            <td>750 Mega (Globoplay)</td>
+                            <td>até 750 Mega </td>
+                            <td>50 Mega </td>
+                            <td>R$154,90</td>
+                            <td>R$149,90</td>
+                        </tr>
+                        <tr>
+                            <td>500 Mega (Globoplay)</td>
+                            <td>até 500 Mega</td>
+                            <td>50 Mega </td>
+                            <td>R$124,90</td>
+                            <td>R$119,90</td>
+                        </tr>
+                        <tr>
+                            <td>350 Mega (Globoplay)</td>
+                            <td> até 350 Mega </td>
+                            <td>35 Mega </td>
+                            <td>R$104,90</td>
+                            <td>R$99,90</td>
+                        </tr>
+                        <tr>
+                            <td>250 Mega</td>
+                            <td>até 250 Mega </td>
+                            <td>25 Megas </td>
+                            <td>R$84,90</td>
+                            <td>R$79,90</td>
+                
+                        </tr>
+                        <tr class="plano" >
+
+                            <th rowspan="2" colspan="1" id="center">OFERTA RENTABILIDADE</th>
+
+                            <td>500 Mega (Globoplay)</td>
+                            <td>500 Mega </td>
+                            <td> 50 Mega </td>
+                            <td>R$104,90</td>
+                            <td>R$99,90</td>
+                        </tr>
+                        <tr class="plano">
+                            <td>350 Mega (Globoplay)</td>
+                            <td>350 Mega </td>
+                            <td>35 Mega </td>
+                            <td>R$94,90</td>
+                            <td>R$89,90</td>
+                        </tr>
+                
+                
+                
+                        <tr>
+                            <td colspan="6" style="text-align: center;">OBS: Rentabilidade apenas para novos cliente.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
             <div class="container mt-5">
                
                 <table class="table table-striped">
@@ -114,7 +131,7 @@
                         <tr>
                             <td colspan="2" style="text-align: center; font-size: 1.2em;">Beneficios da internet</td>
                         </tr>
-                        <tr>
+                        <tr id="center1">
                             <th>Benefício</th>
                             <th>Descrição</th>
                         </tr>

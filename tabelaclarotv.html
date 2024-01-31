@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ClaroTV + </title>
     <link rel="stylesheet" href="estilos/tabela-tvbox.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
    
     #mescla{
@@ -14,11 +15,19 @@
     .center{
         margin:auto;
         }
+    #center{
+        vertical-align: middle;
+        padding-left: 85px;
+        font-size: 1.1em;
+    }
+    #center1{
+            text-align: center;
+    }
     .plano{
             background-color: #DA291C;
             color: white;
             
-        }
+    }
 
     </style>
 </head>
@@ -47,51 +56,50 @@
     
     <main>
         <div class="table-container" id="claroTvBoxTable">
-            <table class="center">
-                <thead>
-                    <tr>
-                        <th>Produtos</th>
-                        <th>Boleto</th>
-                        <th>Débito automático</th>
-                        <th>Ponto adicional</th>
-                    </tr>
-                </thead>
-                <tbody>
-            
-                    <tr>
-                        <th> TV - BOX  CLARO TV+</th>
-                        <td>R$114,90</td>
-                        <td>R$109,90</td>
-                        <td>BOX R$ 59,90</td>
-                    </tr>
-                    <tr class="plano">
-                        <th>OFERTA RENT: TV - BOX CLARO TV+ (apenas globoplay)</th>
-                        <td style="text-align: center; font-size: 1.1em;" >R$84,90</td>
-                        <td style="text-align: center; font-size: 1.1em;" >R$79,90</td>
-                        <td style="text-align: center; font-size: 1.1em;">R$59,90</td>
-                     </tr>
-                    <tr>
-                        <th> TV - 4K CLARO TV+</th>
-                        <td>R$124,90</td>
-                        <td>R$119,90</td>
-                        <td>4K R$59,90 | HD R$49,90
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>SOUNDBOX -  CLARO TV + (Cabo)</th>
-                        <td>R$154,90</td>
-                        <td>R$ 149,90</td>
-                        <td>SOUNDBOX R$ R$89,90 </td>
-                    </tr>
-            
-                    <tr>
-                        <th colspan="4" style="text-align: center;">Todo serviço de TV box vem com o GLOBOPLAY + NETFLIX (PADRÃO COM ANUNCIO) gratuito + CANAIS AO VIVO</th>
-                    </tr>
-                    <tr>
-                        <th colspan="4" style="text-align: center;">OBS: Rentabilidade apenas para novos cliente. Se for da base segue com a tabela em branco.</th>
-                    </tr>
-                </tbody>
-            </table>
+
+            <div class="container mt-5">
+                <table class="table table-bordered table-controle">
+                    <thead class="thead-dark" id="center1">
+                        <tr>
+                            <tr class="trh1">
+                             <th colspan="7">CLARO TV BOX</th>
+                            </tr>
+                            <th scope="col">Produtos</th>
+                            <th scope="col">No boleto</th>
+                            <th scope="col">No débito automático</th>
+                            <th scope="col">Ponto adicional</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th id="center">TV - BOX CLARO TV+</th>
+                            <td>R$114,90</td>
+                            <td>R$109,90 </td>
+                            <td>BOX R$59,90 </td>
+                            
+                        </tr>
+                        <tr>
+                            <th id="center">TV - 4K CLARO TV+</th>
+                            <td>R$124,90</td>
+                            <td>R$119,90 </td>
+                            <td>4K R$59,90 | HD R$49,90 </td>
+                            
+                        </tr>
+                        <tr>
+                            <th id="center">SOUNDBOX - CLARO TV + (Cabo)</th>
+                            <td>R$154,90</td>
+                            <td>R$149,90 </td>
+                            <td>SOUNDBOX R$89,90 </td>
+                            
+                        </tr>
+                        
+                        <tr>
+                            <td colspan="6" style="text-align: center;">Todo serviço de TV box vem com o GLOBOPLAY + NETFLIX (PADRÃO COM ANUNCIO) gratuito + CANAIS AO VIVO</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
             
         </div>
     </main>
@@ -106,5 +114,8 @@
             });
         });
     </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
