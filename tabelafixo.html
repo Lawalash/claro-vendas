@@ -6,42 +6,6 @@
     <title>Fixo</title>
     <link rel="stylesheet" href="estilos/tabela-fixo.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-        #mescla{
-            text-align: center;
-            font-weight: bolder;
-        }
-
-        .obs{
-            background-color: #DA291C;
-            color: white;
-            text-align: center;
-        }
-        .obs1{
-            text-align: center;
-        }
-        .valorcent{
-            text-align: center;
-        }
-    
-        .plano{
-            background-color: #DA291C;
-            color: white;
-            
-        }
-        .center{
-        margin:auto;
-        }
-        #center{
-        vertical-align: middle;
-        padding-left: 85px;
-        font-size: 1.1em;
-    }
-        #center1{
-            text-align: center;
-    }
-    
-        </style>
 </head>
 <body>
     <header>
@@ -49,9 +13,7 @@
             <div class="menu-toggle">
                 
             </div>
-            <a href="home.html">
-                <h1 class="logo">TABELA DE PREÇO</h1>
-              </a>
+            <a href="home.html" class="logo">TABELA DE PREÇO</a>
 
             
             <nav class="header-menu">
@@ -106,18 +68,12 @@
 
         </div>
         <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                var claroFixoTab = document.querySelector('.list-itens li:nth-child(4) a');
-                var claroFixoTable = document.getElementById('claroFixoTab');
-
-                claroFixoTab.addEventListener('click', function () {
-                    claroFixoTable.style.display = (claroFixoTable.style.display === 'none' || claroFixoTable.style.display === '') ? 'block' : 'none';
-                });
-            });
+            
         </script>
 
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="estilosJS/fixo.js"></script>
 </body>
 </html>

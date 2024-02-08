@@ -48,8 +48,13 @@ header {
     font-size: 1.2rem;
     letter-spacing: 0.4rem;
     cursor: pointer;
-    color: white;
+    text-decoration: none; /* Remove o sublinhado */
+    color: white; /* Mantém a cor padrão do texto */
 
+}
+.logo:hover {
+    text-decoration: none; /* Remove o sublinhado ao passar o mouse */
+    color: white; /* Mantém a cor padrão do texto */
 }
 
 .menu-content .list-itens {
@@ -141,5 +146,18 @@ th,td {
     color: white;
     margin-top: 25px;
     margin-bottom: 25px;
+    text-align: center;
+}
+
+.plano{
+    background-color: darkgray;
+    color: black; 
+}
+#center{
+    vertical-align: middle;
+    padding-left: 85px;
+    font-size: 1.1em;
+}
+#center1{
     text-align: center;
 }

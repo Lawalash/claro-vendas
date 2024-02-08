@@ -6,21 +6,6 @@
     <title>Internet</title>
     <link rel="stylesheet" href="estilos/tabela-internet.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    
-    <style>
-        .plano{
-            background-color: darkgray;
-            color: black; 
-        }
-        #center{
-            vertical-align: middle;
-            padding-left: 85px;
-            font-size: 1.1em;
-        }
-        #center1{
-            text-align: center;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -28,9 +13,7 @@
             <div class="menu-toggle">
                 
             </div>
-            <a href="home.html">
-                <h1 class="logo">TABELA DE PREÇO</h1>
-              </a>
+            <a href="home.html" class="logo">TABELA DE PREÇO</a>
 
             
             <nav class="header-menu">
@@ -181,21 +164,11 @@
 
         
     </main>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var internetTab = document.querySelector('.list-itens li:nth-child(1) a'); // Selecione o link da aba "INTERNET"
-            var internetTable = document.getElementById('internetTable'); // Selecione a div da tabela
-
-            internetTab.addEventListener('click', function () {
-                // Alterna a visibilidade da tabela ao clicar na aba "INTERNET"
-                internetTable.style.display = (internetTable.style.display === 'none' || internetTable.style.display === '') ? 'block' : 'none';
-            });
-        });
-    </script>
 
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="estilosJS/internet.js"></script>
 
 </body>
 </html>

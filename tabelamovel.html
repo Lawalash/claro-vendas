@@ -6,11 +6,7 @@
     <title>Móvel</title>
     <link rel="stylesheet" href="estilos/tabela-movel.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <style>
-        .table-controle th, .table-controle td {
-            text-align: center;
-        }
-        </style>
+    
 </head>
 <body>
     <header>
@@ -18,9 +14,7 @@
             <div class="menu-toggle">
                 
             </div>
-            <a href="home.html">
-                <h1 class="logo">TABELA DE PREÇO</h1>
-              </a>
+            <a href="home.html" class="logo">TABELA DE PREÇO</a>
 
             
             <nav>
@@ -219,21 +213,10 @@
             
         </div>
     </main>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var claroMovelTab = document.querySelector('.list-itens li:nth-child(3) a');
-            var claroMovelTable = document.getElementById('claroMovelTab');
-        
-            claroMovelTab.addEventListener('click', function () {
-                claroMovelTable.style.display = (claroMovelTable.style.display === 'none' || claroMovelTable.style.display === '') ? 'block' : 'none';
-            });
-        });
-    </script>
-
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="estilosJS/movel.js"></script>
     
 </body>
 </html>

@@ -51,8 +51,13 @@ header {
     font-size: 1.2rem;
     letter-spacing: 0.4rem;
     cursor: pointer;
-    color: white;
+    text-decoration: none; /* Remove o sublinhado */
+    color: white; /* Mantém a cor padrão do texto */
 
+}
+.logo:hover {
+    text-decoration: none; /* Remove o sublinhado ao passar o mouse */
+    color: white; /* Mantém a cor padrão do texto */
 }
 
 .menu-content .list-itens {
@@ -141,4 +146,30 @@ th,td {
     margin-top: 25px;
     margin-bottom: 25px;
     text-align: center;
+}
+#mescla {
+    text-align: center;
+    font-weight: bolder;
+}
+
+.center {
+    margin: auto;
+}
+
+#center {
+    vertical-align: middle;
+    padding-left: 85px;
+    font-size: 1.1em;
+}
+
+#center1 {
+    text-align: center;
+}
+
+.plano {
+    background-color: darkgray;
+    color: black;
+    vertical-align: middle;
+    text-align: center;
+    font-size: 1.1em;
 }
