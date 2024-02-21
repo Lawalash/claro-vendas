@@ -48,19 +48,20 @@
                             <td>R$114,90</td>
                             <td>R$109,90</td>
                             <td>BOX R$59,90</td>
-                        </tr>
-                        
-                        
-                        <tr class="plano">
+                            
+                        <tr class="plano hidden">
                             <th colspan="1" id="centerrent">(Cliente recebe R$30,00 de desconto durante 2 meses) Com desconto:</th>
                             <td>R$84,90</td>
                             <td>R$79,90</td>
                             <td>BOX R$59,90</td>
                         </tr>
-                        <tr class="plano">
+                        <tr class="plano hidden">
                             <th>Nomenclatura:</th>
                             <td colspan="3">PROMO CTV+ C/ NTFX FID DESC R$30,00 2M</td>
                         </tr>
+
+
+                        
                         <tr>
                             <th id="center">TV - 4K CLARO TV+</th>
                             <td>R$144,90</td>
@@ -68,28 +69,41 @@
                             <td>4K R$59,90 | HD R$49,90</td>
                         </tr>
                         
-                        <tr class="plano">
+                       
+                        <tr class="plano hidden">
                             <th th colspan="1" id="centerrent">(Cliente recebe R$30,00 de desconto durante 2 meses) Com desconto:</th>
                             <td>R$114,90</td>
                             <td>R$109,90</td>
                             <td>4K R$59,90 | HD R$49,90</td>
                         </tr>
-                        <tr class="plano">
+                        <tr class="plano hidden">
                             <th>Nomenclatura:</th>
                             <td colspan="3">PROMO CTV+ C/ NTFX FID DESC R$30,00 2M</td>
                         </tr>
+
+
                         <tr>
                             <th class="center" id="center">SOUNDBOX - CLARO TV + (Cabo)</th>
                             <td>R$154,90</td>
                             <td>R$149,90</td>
                             <td>SOUNDBOX R$89,90</td>
                         </tr>
+
+                        <tr class="thbutton">
+                            <th colspan="4"><button id="toggleButton" class="buttonth">Mostrar oferta</button></th>
+                        </tr>
+
+
+
+
                         <tr>
                             <th class="combo" colspan="4" onclick="abrirImagem()">Visão geral dos combos (Clique em mim)</th>
                         </tr>
                         <div id="imagemModal" class="modal">
                             <span class="fechar" onclick="fecharImagem()">&times;</span>
                             <img class="modal-imagem" id="imagemModalSrc">
+                            <div class="seta-esquerda" onclick="mudarImagem(-1)">&lt;</div>
+                            <div class="seta-direita" onclick="mudarImagem(1)">&gt;</div>
                         </div>
                             
                         <tr>
@@ -99,6 +113,7 @@
                 </table>
             </div>
         </div>
+        
     </main>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

@@ -215,3 +215,47 @@ th,td {
     text-align: center;
     font-size: 1.2em;
 }
+
+.seta-esquerda, .seta-direita {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #000;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.seta-esquerda {
+    left: 10px;
+}
+
+.seta-direita {
+    right: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.buttonth {
+    font-size: 1.2em;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: transparent; /* Define o fundo como transparente */
+    cursor: pointer; /* Muda o cursor ao passar sobre o botão */
+    outline: none; /* Remove o contorno ao focar no botão */
+    
+}
+.buttonth:hover{
+    background-color: rgb(207, 207, 207);
+}
+.thbutton{
+    text-align: center;
+}
+
