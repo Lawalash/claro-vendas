@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-var imagens = ['imagens/combo.jpg', 'imagens/combo2.jpeg']; // Lista de URLs das imagens
+var imagens = ['imagens/combo.jpg', 'imagens/combo2.jpeg','imagens/combo3.jpeg']; // Lista de URLs das imagens
 var indiceAtual = 0; // Índice da imagem atual
 
 function abrirImagem() {
