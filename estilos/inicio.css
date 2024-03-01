@@ -130,8 +130,8 @@ main {
   cursor: pointer;
   color: white;
 }
-
 #sites-container {
+  max-width: 1200px;
   display: none;
   margin-top: 20px;
   padding: 10px;
@@ -145,6 +145,7 @@ main {
 
 .btns {
   display: flex;
+  flex-wrap: wrap; /* Adiciona esta linha para quebrar a linha quando não houver espaço */
   justify-content: center;
   gap: 20px;
 }
@@ -152,11 +153,41 @@ main {
   max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho do botão */
   max-height: 100%; /* Garante que a imagem não ultrapasse o tamanho do botão */
 }
-#btnsreceita{
-  padding-top: 10px;
-  max-width: 200px;
+.buttonclaro:hover{
+  color: #DA291C;
+  font-size: 1.6em;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
+.buttoncorreios:hover{
+  color: #FBBC30;
+  font-size: 1.6em;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.buttoncpf:hover{
+  color: #1659BF;
+  font-size: 1.6em;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.buttoncnpj:hover{
+  color: #0F4098;
+  font-size: 1.6em;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.buttonnegocia:hover{
+  color: #E41F2C;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.buttonforms:hover{
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 .btns button {
   width: 250px;
   height: 60px;
@@ -178,7 +209,7 @@ main {
     left: 0;
     width: 0;
     height: 100%;
-    background-color: #da291c52; /* Cor do efeito de transição */
+    background-color: #eee5e552; /* Cor do efeito de transição */
     border-radius: 20px;
     transition: width 0.7s ease-out; /* Tempo e tipo de transição */
     z-index: -1; /* Coloca o efeito por trás do texto do botão */
