@@ -1,7 +1,7 @@
 <?php
     session_start();
 
-    if(empty($_POST) or (empty($_POST["usuario"]) or (empty($_POST["senha"])))){
+    if(empty($_POST) || empty($_POST["usuario"]) || empty($_POST["senha"])){
         print "<script> location.href='index.php';</script>";
     }
 
@@ -11,7 +11,7 @@
     $senha = $_POST["senha"];
 
     // Use prepared statements para evitar SQL Injection
-    $stmt = $conn->prepare("SELECT * FROM usuarios WHERE usuario = ? AND senha = ?");
+    $stmt = $conn->prepare("SELECT * FROM operadores WHERE loguin = ? AND senha = ?");
     $stmt->bind_param("ss", $usuario, $senha);
     $stmt->execute();
     $res = $stmt->get_result();
@@ -23,7 +23,7 @@
     if($qtd > 0){
         $_SESSION["usuario"] = $usuario;
         $_SESSION["nome"] = $row->nome;
-        $_SESSION["tipo"] = $row->tipo;
+        $_SESSION["tipo"] = $row->tipo; // Certifique-se de que "tipo" existe na sua tabela
         print "<script>location.href='dashboard.php';</script>";
     } else {
         print "<script>alert('Usuário e/ou senha incorretos(s)');</script>";

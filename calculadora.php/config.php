@@ -1,13 +1,15 @@
 <?php
-define('HOST', 'claro-vendas.mysql.database.azure.com'); // Altere para o nome do host fornecido pelo Azure
-define('USER', 'lawalash'); // Altere para o nome de usuário fornecido pelo Azure
-define('PASS', '@Twilight122'); // Altere para a senha do usuário fornecida pelo Azure
-define('BASE', 'sislogin');
+$host = 'lawalash-1965.g8x.gcp-southamerica-east1.cockroachlabs.cloud';
+$port = '26257';
+$dbname = 'defaultdb';
+$user = 'lawalash';
+$pass = 'bJVTNygZbtUknf7MB5V9rA';
 
-// Criação da conexão
-$conn = new MySQLi(HOST, USER, PASS, BASE);
+// Conectando ao banco de dados
+$conn = new mysqli($host, $user, $pass, $dbname, $port);
 
-// Verifica a conexão
+// Verificando a conexão
 if ($conn->connect_error) {
-    die("Erro na conexão: " . $conn->connect_error);
+    die("Falha na conexão com o banco de dados: " . $conn->connect_error);
 }
+?>

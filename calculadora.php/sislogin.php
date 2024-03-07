@@ -1,14 +1,16 @@
 <?php
-define('DB_HOST', 'claro-vendas.mysql.database.azure.com'); // Endereço do servidor de banco de dados no Azure
-define('DB_USER', 'lawalash'); // Nome de usuário do banco de dados no Azure
-define('DB_PASS', '@Twilight122'); // Senha do banco de dados no Azure
-define('DB_NAME', 'sislogin'); // Nome do banco de dados no Azure
+define('HOST', 'localhost');
+define('USER', 'root');
+define('PASS', '');
+define('BASE', 'sislogin');
 
-// Conexão com o banco de dados
-$conn = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+// Estabelecer conexão com o banco de dados
+$conn = new mysqli(HOST, USER, PASS, BASE);
 
-// Verifica se houve erro na conexão
+// Verificar se ocorreu algum erro na conexão
 if ($conn->connect_error) {
-    die("Erro na conexão com o banco de dados: " . $conn->connect_error);
+    die("Erro de conexão: " . $conn->connect_error);
 }
-?>
+
+// Definir o charset para UTF-8 (opcional)
+$conn->set_charset("utf8");
