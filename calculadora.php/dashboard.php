@@ -1,3 +1,7 @@
+<?php
+// Iniciando a sessão no início do arquivo
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -7,61 +11,51 @@
     <!-- Adicionando Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
-        /* Estilo adicional personalizado */
+        /* Estilos personalizados */
+        img[src*="https://www.000webhost.com/static/default.000webhost.com/images/powered-by-000webhost.png"] {
+            display: none;
+        }
         .navbar-brand {
-            font-size: 1.5rem; /* Tamanho da fonte aumentado */
+            font-size: 1.5rem;
         }
-
         .btn-sair {
-            font-size: 1.2rem; /* Tamanho do botão aumentado */
+            font-size: 1.2rem;
         }
-
-        /* Ajustes para a tabela */
         .table th, .table td {
             vertical-align: middle;
         }
-
         .table th {
-            width: 10%; /* Largura das células de cabeçalho */
-            text-align: center; /* Centralizar texto */
-        }
-
-        .table td {
-            width: 30%; /* Largura das células de dados */
+            width: 10%;
             text-align: center;
         }
-        #h3{
+        .table td {
+            width: 30%;
+            text-align: center;
+        }
+        #h3 {
             margin-bottom: 20px;
             text-align: center;
-            
         }
     </style>
 </head>
 <body>
-    <!-- Navbar no topo da página -->
+    <!-- Navbar -->
     <nav class="navbar navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="../claro-ativo/home.html">CLARO RESULTADO</a>
+            <a class="navbar-brand" href="https://clarovendas.000webhostapp.com/home.html">CLARO RESULTADO</a>
             <?php
-                // Verificar se o usuário está logado
-                session_start();
                 if(empty($_SESSION["nome"])){
-                    // Redirecionar para a página de login se o usuário não estiver logado
                     header("Location: index.php");
-                    exit(); // Encerrar o script para evitar que o restante do código seja executado
+                    exit();
                 }
-
-                // Incluir o arquivo de configuração do banco de dados
-                include('sislogin.php');
-
-                // Exibir mensagem de boas-vindas e botão de sair
+                include('lawalash.php');
                 echo "Olá, " . $_SESSION["nome"];
                 echo "<a href='logout.php' class='btn btn-danger btn-sair'>Sair</a>";
             ?>
         </div>
     </nav>
 
-    <!-- Abas de Resultado e Faça sua métrica -->
+    <!-- Abas -->
     <ul class="nav nav-tabs mt-4">
         <li class="nav-item">
             <a class="nav-link active" id="resultado-tab" data-toggle="tab" href="#resultado" role="tab" aria-controls="resultado" aria-selected="true">Resultado</a>
@@ -81,85 +75,23 @@
                     <table class="table table-bordered table-striped">
                         <thead class="thead-dark">
                             <?php
-                                // Recuperar dados do banco de dados
-                                $query = "SELECT * FROM operadores";
-                                $result = $conn->query($query);
-
-                                // Exibir os dados em uma tabela
-                                if ($result && $result->num_rows > 0) {
-                                    while ($row = $result->fetch_assoc()) {
-                                        echo "<tr>";
-                                        echo "<th>Login</th>";
-                                        echo "<td>" . $row["loguin"] . "</td>";
-                                        echo "</tr>";
-                                        echo "<tr>";
-                                        echo "<th>Nome</th>";
-                                        echo "<td>" . $row["nome"] . "</td>";
-                                        echo "</tr>";
-                                        echo "<tr>";
-                                        echo "<th>Valor Vendido</th>";
-                                        echo "<td>R$ " . number_format($row["valor_vendido"], 2, ',', '.') . "</td>";
-                                        echo "</tr>";
-                                        echo "<tr>";
-                                        echo "<th>Meta de Vendas</th>";
-                                        echo "<td>R$ " . number_format($row["meta_de_vendas"], 2, ',', '.') . "</td>";
-                                        echo "</tr>";
-                                        echo "<tr>";
-                                        echo "<th>% Atingimento</th>";
-                                        echo "<td>" . $row["percentual_atingimento"] . "%</td>";
-                                        echo "</tr>";
-                                        echo "<tr>";
-                                        echo "<th>Chamadas</th>";
-                                        echo "<td>" . $row["chamadas"] . "</td>";
-                                        echo "</tr>";
-                                        echo "<tr>";
-                                        echo "<th>Vendas Instaladas</th>";
-                                        echo "<td>" . $row["vendas_instaladas"] . "</td>";
-                                        echo "</tr>";
-                                        echo "<tr>";
-                                        echo "<th>% Meta Conversão</th>";
-                                        echo "<td>" . $row["percentual_meta_conversao"] . "%</td>";
-                                        echo "</tr>";
-                                        echo "<tr>";
-                                        echo "<th>% Conversão</th>";
-                                        echo "<td>" . $row["percentual_conversao"] . "%</td>";
-                                        echo "</tr>";
-                                        echo "<tr>";
-                                        echo "<th>Dias Válidos</th>";
-                                        echo "<td>" . $row["dias_validos"] . "</td>";
-                                        echo "</tr>";
-                                        echo "<tr>";
-                                        echo "<th>Ausências</th>";
-                                        echo "<td>" . $row["ausencias"] . "</td>";
-                                        echo "</tr>";
-                                        echo "<tr>";
-                                        echo "<th>% Presenteísmo</th>";
-                                        echo "<td>" . $row["percentual_presenteismo"] . "%</td>";
-                                        echo "</tr>";
-                                        echo "<tr>";
-                                        echo "<th>% Atingimento Final</th>";
-                                        echo "<td>" . $row["percentual_atingimento_final"] . "%</td>";
-                                        echo "</tr>";
-                                        echo "<tr>";
-                                        echo "<th>% Atingimento x Peso</th>";
-                                        echo "<td>" . $row["percentual_atingimento_peso"] . "%</td>";
-                                        echo "</tr>";
-                                        echo "<tr>";
-                                        echo "<th>Faixa</th>";
-                                        echo "<td>" . $row["faixa"] . "</td>";
-                                        echo "</tr>";
-                                        echo "<tr>";
-                                        echo "<th>Valor Final</th>";
-                                        echo "<td>R$ " . number_format($row["valor_final"], 2, ',', '.') . "</td>";
-                                        echo "</tr>";
-                                    }
-                                } else {
-                                    // Caso não haja resultados ou ocorra um erro
-                                    echo "<tr><td colspan='2'>Nenhum resultado encontrado</td></tr>";
-                                    if(isset($conn) && $conn->error) {
-                                        echo "<tr><td colspan='2'>Erro: " . $conn->error . "</td></tr>";
-                                    }
-                                }
+                                // Exibir informações do operador
+                                echo "<tr><th>Login</th><td>289853</td></tr>";
+                                echo "<tr><th>Nome</th><td>Ricardo Alexandre Brasil Junior</td></tr>";
+                                echo "<tr><th>Valor Vendido</th><td>R$ 2.772,54</td></tr>";
+                                echo "<tr><th>Meta de Vendas</th><td>R$ 3.500,00</td></tr>";
+                                echo "<tr><th>% Atingimento</th><td>75,3%</td></tr>";
+                                echo "<tr><th>Chamadas</th><td>1790</td></tr>";
+                                echo "<tr><th>Vendas Instaladas</th><td>35</td></tr>";
+                                echo "<tr><th>% Meta Conversão</th><td>3,00%</td></tr>";
+                                echo "<tr><th>% Conversão</th><td>1,96%</td></tr>";
+                                echo "<tr><th>Dias Válidos</th><td>25</td></tr>";
+                                echo "<tr><th>Ausências</th><td>0</td></tr>";
+                                echo "<tr><th>% Presenteísmo</th><td>100%</td></tr>";
+                                echo "<tr><th>% Atingimento Final</th><td>100%</td></tr>";
+                                echo "<tr><th>% Atingimento x Peso</th><td>39,55%</td></tr>";
+                                echo "<tr><th>Faixa</th><td>G4</td></tr>";
+                                echo "<tr><th>Valor Final</th><td>R$ 27,11</td></tr>";
                             ?>
                         </thead>
                     </table>

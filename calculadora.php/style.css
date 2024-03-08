@@ -8,6 +8,10 @@ body {
     margin: 0;
 }
 
+img[src*="https://www.000webhost.com/static/default.000webhost.com/images/powered-by-000webhost.png"] {
+    display: none;
+  }
+
 .login-container {
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -50,4 +54,25 @@ body {
 
 .btn-primary:hover {
     background-color: #0056b3;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333; /* Cor de fundo do cabeçalho */
+    padding: 10px; /* Espaçamento interno */
+    color: #fff; /* Cor do texto */
+}
+
+header a {
+    color: #fff; /* Cor do link */
+    text-decoration: none; /* Remover sublinhado do link */
+    font-weight: bold; /* Negrito */
+}
+
+/* Estilo quando passar o mouse sobre o link */
+header a:hover {
+    text-decoration: underline; /* Sublinhar o link ao passar o mouse */
 }

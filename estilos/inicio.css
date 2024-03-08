@@ -32,6 +32,10 @@ html {
   font-family: 'Lato', sans-serif;
 }
 
+img[src*="https://www.000webhost.com/static/default.000webhost.com/images/powered-by-000webhost.png"] {
+  display: none;
+}
+
 body {
   background: linear-gradient(rgba(112, 112, 112, 0.384), rgba(20, 20, 20, 1)), url(../imagens/claro.jpeg);
   background-position: center center;

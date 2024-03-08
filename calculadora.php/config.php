@@ -1,12 +1,11 @@
 <?php
-$host = 'lawalash-1965.g8x.gcp-southamerica-east1.cockroachlabs.cloud';
-$port = '26257';
-$dbname = 'defaultdb';
-$user = 'lawalash';
-$pass = 'bJVTNygZbtUknf7MB5V9rA';
+$host = 'localhost';
+$dbname = 'id21967405_lawalash';
+$user = 'id21967405_lawalash';
+$pass = '@Twilight122';
 
 // Conectando ao banco de dados
-$conn = new mysqli($host, $user, $pass, $dbname, $port);
+$conn = new mysqli($host, $user, $pass, $dbname);
 
 // Verificando a conexão
 if ($conn->connect_error) {
