@@ -154,15 +154,44 @@ th,td {
     text-align: center;
 }
 
-.plano{
+#plano{
     background-color: darkgray;
     color: black; 
 }
 #center{
-    vertical-align: middle;
-    padding-left: 85px;
+    text-align: center;
+    padding-top: 90px;
+    padding-left: 0;
+    padding-right: 0;
     font-size: 1.1em;
 }
+#centerent{
+    vertical-align: middle;
+    text-align: center;
+}
+
 #center1{
     text-align: center;
+}
+
+
+.hidden {
+    display: none;
+}
+
+.buttonth {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttonth:hover {
+    background-color: #0056b3;
+}
+
+#iconpdf{
+    max-width:34px;
 }

@@ -7,3 +7,14 @@ document.addEventListener('DOMContentLoaded', function () {
         internetTable.style.display = (internetTable.style.display === 'none' || internetTable.style.display === '') ? 'block' : 'none';
     });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    var toggleButton = document.getElementById('toggleButton');
+    var ofertaRentabilidade = document.querySelectorAll('.ofertaRentabilidade');
+
+    toggleButton.addEventListener('click', function () {
+        ofertaRentabilidade.forEach(function (linha) {
+            linha.classList.toggle('hidden');
+        });
+    });
+});

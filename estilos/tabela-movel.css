@@ -173,3 +173,9 @@ th, td {
 .table-controle th, .table-controle td {
     text-align: center;
 }
+
+#iconpdf{
+    max-width:34px;
+    margin-top: 70px;
+    vertical-align: middle;
+}
