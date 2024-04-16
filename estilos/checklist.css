@@ -156,25 +156,7 @@ strong{
     color: white;
   }
 
-  .checklist-content {
-    font-size: 1em;
-    display: none;
-    margin-top: 10px;
-    padding: 10px;
-    color: white;
-    background-color:var(--cor2);
-    text-align: center;
-  }
-
-  input[type="checkbox"]:checked + label {
-    background-color: var(--cor3);
-    color: white;
-    text-align: center;
-  }
-
-  input[type="checkbox"]:checked + label + .checklist-content {
-    display: block;
-  }
+  
 
 /* FIM DO CORPO DO CHECKLIST */
 
@@ -235,47 +217,84 @@ td{
 /* FIM DA CSS DA TABELA BENEFICIOS DO PLANO */
 
 /* CALCULADORA */
+/* Estilos para a calculadora */
 .calculator {
-    max-width: 350px;
-    margin: 50px auto;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  #calc{
-    color: black;
-  }
-  #calc:hover{
-    color: black;
-  }
+  max-width: 350px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Centralizar conteúdo */
+}
 
-  label {
-    display: block;
-    margin-bottom: 10px;
-  }
+.calculator label,
+.calculator input {
+  display: block;
+  margin-bottom: 10px;
+}
 
-  input {
-    width: 30%;
-    padding: 8px;
-    margin-bottom: 15px;
-  }
+.calculator input[type="number"]::before {
+  content: "R$ "; /* Adiciona o R$ antes do input de número */
+}
 
-  button {
-    background-color: #4caf50;
-    color: black;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
+.calculator button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
 
-  button:hover {
-    background-color: #45a049;
-  }
+.calculator button:hover {
+  background-color: #45a049;
+}
 
-  #result {
-    margin-top: 20px;
-    font-weight: bold;
-  }
+.calculator #result {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+
 /* FIM DA CALCULADORA */
+
+
+.accordion-button::after {
+  content: '\002B';
+  transition: transform 0.35s ease;
+}
+
+.accordion-item.collapsed .accordion-button::after {
+  content: '\2212';
+  transition: transform 0.35s ease;
+}
+
+
+/* Estilos para o acordeão */
+
+
+.accordion-button {
+  background-color: #f4f4f4;
+  color: black;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.accordion-button:hover {
+  background-color: #eaeaea;
+}
+
+.accordion-body {
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px; /* Adiciona margem inferior para todos os itens */
+}
+
+/* Fim dos estilos para o acordeão */
+
