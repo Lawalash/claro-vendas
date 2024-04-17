@@ -208,8 +208,11 @@ th, td {
     font-weight: bolder;
 }
 
+
+
+
 .modal {
-    display: none; /* Oculta a janela modal por padrão */
+    display: none;
     position: fixed;
     z-index: 1;
     left: 0;
@@ -217,54 +220,78 @@ th, td {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgba(0, 0, 0, 0.4); /* Fundo semi-transparente */
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .modal-content {
-    background-color: #fefefe;
+    background-color: #fff;
     position: fixed;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    padding: 10px; /* Reduzindo o padding para deixar a caixa menor */
-    border: 1px solid #888;
-    width: 40%; /* Alterada a largura para 40% */
-    max-width: 600px; /* Define a largura máxima */
-    max-height: 80vh; /* Altura máxima de 80% da altura da viewport */
-    overflow-y: auto; /* Adiciona rolagem vertical se necessário */
-    margin-bottom: 20px; /* Margem inferior para separação */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 600px;
+    max-height: 80vh;
+    overflow-y: auto;
+    margin-bottom: 20px;
 }
 
 .close {
-    color: #000; /* Alterando a cor para preto para ficar mais visível */
+    color: #333;
     float: right;
-    font-size: 32px; /* Aumentando o tamanho do texto do botão de fechar */
+    font-size: 24px;
     font-weight: bold;
     cursor: pointer;
-    padding: 5px; /* Adicionando um padding para melhorar a visibilidade */
+    padding: 5px;
 }
 
 .close:hover,
 .close:focus {
-    color: #555; /* Alterando a cor ao passar o mouse para um tom mais escuro */
-    text-decoration: none;
+    color: #555;
 }
 
+#pesquisarCidade {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
 
+#confirmarCidade {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
 
+#confirmarCidade:hover {
+    background-color: #0056b3;
+}
 
 .list-cidades {
     list-style-type: none;
+    padding: 0;
 }
 
 .list-cidades li {
     cursor: pointer;
-    transition: background-color 0.3s ease; /* Adiciona uma transição suave */
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
 .list-cidades li:hover {
-    background-color: #f0f0f0; /* Altera a cor de fundo ao passar o mouse */
+    background-color: #f0f0f0;
 }
+
 
 
 

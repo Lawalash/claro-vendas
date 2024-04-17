@@ -33,6 +33,18 @@ document.addEventListener('DOMContentLoaded', function () {
     var listaCidades = document.querySelectorAll('.list-cidades li');
     var pesquisarCidadeInput = document.getElementById('pesquisarCidade');
 
+    // Adicionando evento de clique para cada cidade na lista
+    listaCidades.forEach(cidade => {
+        cidade.addEventListener('click', function () {
+            // Obtendo o texto da cidade clicada
+            var cidadeSelecionada = this.textContent.trim();
+            
+            // Preenchendo o campo de pesquisa com a cidade selecionada
+            pesquisarCidadeInput.value = cidadeSelecionada;
+        });
+    });
+
+
 
 
 
@@ -61,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     confirmarCidadeButton.addEventListener('click', function () {
         var cidadeDigitada = pesquisarCidadeInput.value.trim().toLowerCase();
-        var cidadesDisponiveis = [ 'alvorada-rs', 'americana-sp', 'sao paulo-sp', 'ananindeua-pa','anapolis-go', 'aparecida de goiania-go', 'aparecida-sp', 'aracaju-se', 'aracatuba-sp', 'arapongas-pr','araraquara-sp', 'araras-sp', 'araucaria-pr', 'artur nogueira-sp', 'atibaia-sp', 'bage-rs','balneario camboriu-sc', 'barra mansa-rj', 'barueri-sp', 'bauru-sp', 'belem-pa', 'belford roxo-rj','belo horizonte-mg', 'bento goncalves-rs', 'bertioga-sp', 'betim-mg', 'blumenau-sc', 'botucatu-sp','braganca paulista-sp', 'brasilia-df', 'brusque-sc', 'cabedelo-pb', 'cacapava-sp', 'cachoeira paulista-sp',
+        var cidadesDisponiveis = [ 'alvorada-rs', 'americana-sp', 'sao paulo-sp', 'ananindeua-pa','anapolis-go', 'aparecida de goiania-go', 'aparecida-sp', 'aracaju-se', 'aracatuba-sp', 'arapongas-pr','araraquara-sp', 'araras-sp', 'araucaria-pr', 'artur nogueira-sp', 'atibaia-sp', 'bage-rs','balneario camboriu-sc', 'almirante tamandare-pr', 'barra mansa-rj', 'barueri-sp', 'bauru-sp', 'belem-pa', 'belford roxo-rj','belo horizonte-mg', 'bento goncalves-rs', 'bertioga-sp', 'betim-mg', 'blumenau-sc', 'botucatu-sp','braganca paulista-sp', 'brasilia-df', 'brusque-sc', 'cabedelo-pb', 'cacapava-sp', 'cachoeira paulista-sp',
         'cachoeirinha-rs', 'cachoeiro de itapemirim-es', 'campina grande-pb', 'campinas-sp', 'campo bom-rs','campo grande-ms', 'campo largo-pr', 'campos dos goytacazes-rj', 'canoas-rs', 'capao da canoa-rs',
         'capivari-sp', 'carapicuiba-sp', 'cariacica-es', 'caruaru-pe', 'cascavel-pr', 'caxias do sul-rs',
         'chapeco-sc', 'cianorte-pr', 'colombo-pr', 'contagem-mg', 'cosmopolis-sp', 'cotia-sp', 'criciuma-sc',
