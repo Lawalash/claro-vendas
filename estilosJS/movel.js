@@ -8,14 +8,8 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 
-    // Novo script para mostrar/ocultar linhas da tabela ao clicar no botão "Mostrar Oferta"
-    var toggleButton = document.getElementById('toggleButton');
-    toggleButton.addEventListener('click', function () {
-        var rowsToShow = document.querySelectorAll('.mostrar-oferta');
-        rowsToShow.forEach(row => {
-            row.style.display = (row.style.display === 'none' || row.style.display === '') ? 'table-row' : 'none';
-        });
-    });
+
+    
 
     // Script para mostrar/ocultar janela modal ao clicar no botão "Exibir Lista de Cidades"
     var exibirListaButton = document.getElementById('exibirListaButton');
