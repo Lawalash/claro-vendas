@@ -1,10 +1,20 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Script existente para mostrar/ocultar uma tabela ao clicar em um link
-    var claroMovelTab = document.querySelector('.list-itens li:nth-child(3) a');
-    var claroMovelTable = document.getElementById('claroMovelTab');
+    // Selecionando o link "MÓVEL"
+    var movelLink = document.querySelector('a[href="tabelamovel.html"]');
 
-    claroMovelTab.addEventListener('click', function () {
-        claroMovelTable.style.display = (claroMovelTable.style.display === 'none' || claroMovelTable.style.display === '') ? 'block' : 'none';
+    // Selecionando o main pelo id
+    var tabelaMovel = document.getElementById('tabelaMovel');
+
+    // Adicionando um evento de clique ao link "MÓVEL"
+    movelLink.addEventListener('click', function () {
+        // Verificando se o main está oculto
+        if (tabelaMovel.style.display === 'none') {
+            // Mostrando o main
+            tabelaMovel.style.display = 'block';
+        } else {
+            // Ocultando o main
+            tabelaMovel.style.display = 'none';
+        }
     });
 
     // Novo script para mostrar/ocultar linhas da tabela ao clicar no botão "Mostrar Oferta"
@@ -41,18 +51,15 @@ document.addEventListener('DOMContentLoaded', function () {
             
             // Preenchendo o campo de pesquisa com a cidade selecionada
             pesquisarCidadeInput.value = cidadeSelecionada;
+
+            // Fechando a janela modal ao selecionar uma cidade
+            janelaModal.style.display = 'none';
         });
     });
 
-
-
-
-
-
+    // Evento de input para o campo de pesquisa de cidade
     pesquisarCidadeInput.addEventListener('input', function () {
         var termoPesquisa = this.value.trim().toLowerCase(); // Obtendo o termo de pesquisa em letras minúsculas
-
-        var listaCidades = document.querySelectorAll('.list-cidades li'); // Selecionando a lista de cidades
 
         // Iterando sobre cada cidade na lista para verificar o termo de pesquisa
         listaCidades.forEach(cidade => {
