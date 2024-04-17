@@ -1,30 +1,15 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Selecionando o link "MÓVEL"
-    var movelLink = document.querySelector('a[href="tabelamovel.html"]');
+    // Script existente para mostrar/ocultar uma tabela ao clicar em um link
+    var claroMovelTab = document.querySelector('.list-itens li:nth-child(3) a');
+    var claroMovelTable = document.getElementById('claroMovelTab');
 
-    // Selecionando o main pelo id
-    var tabelaMovel = document.getElementById('tabelaMovel');
-
-    // Adicionando um evento de clique ao link "MÓVEL"
-    movelLink.addEventListener('click', function () {
-        // Verificando se o main está oculto
-        if (tabelaMovel.style.display === 'none') {
-            // Mostrando o main
-            tabelaMovel.style.display = 'block';
-        } else {
-            // Ocultando o main
-            tabelaMovel.style.display = 'none';
-        }
+    claroMovelTab.addEventListener('click', function () {
+        claroMovelTable.style.display = (claroMovelTable.style.display === 'none' || claroMovelTable.style.display === '') ? 'block' : 'none';
     });
 
-    // Novo script para mostrar/ocultar linhas da tabela ao clicar no botão "Mostrar Oferta"
-    var toggleButton = document.getElementById('toggleButton');
-    toggleButton.addEventListener('click', function () {
-        var rowsToShow = document.querySelectorAll('.mostrar-oferta');
-        rowsToShow.forEach(row => {
-            row.style.display = (row.style.display === 'none' || row.style.display === '') ? 'table-row' : 'none';
-        });
-    });
+
+
+    
 
     // Script para mostrar/ocultar janela modal ao clicar no botão "Exibir Lista de Cidades"
     var exibirListaButton = document.getElementById('exibirListaButton');
