@@ -2,10 +2,11 @@ document.addEventListener('DOMContentLoaded', function () {
     // Script existente para mostrar/ocultar uma tabela ao clicar em um link
     var claroMovelTab = document.querySelector('.list-itens li:nth-child(3) a');
     var claroMovelTable = document.getElementById('claroMovelTab');
-
+  
     claroMovelTab.addEventListener('click', function () {
-        claroMovelTable.style.display = (claroMovelTable.style.display === 'none' || claroMovelTable.style.display === '') ? 'block' : 'none';
+      claroMovelTable.style.display = (claroMovelTable.style.display === 'none' || claroMovelTable.style.display === '') ? 'block' : 'none';
     });
+
 
     // Novo script para mostrar/ocultar linhas da tabela ao clicar no botão "Mostrar Oferta"
     var toggleButton = document.getElementById('toggleButton');
