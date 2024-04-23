@@ -160,7 +160,7 @@ th,td {
 }
 #center{
     text-align: center;
-    padding-top: 90px;
+    padding-top: 17%;
     padding-left: 0;
     padding-right: 0;
     font-size: 1.1em;
@@ -372,7 +372,7 @@ th,td {
 /* Estilo para o ícone de TV */
 .tv-icon {
     font-size: 0.8em; /* Tamanho do ícone */
-    margin-right: 7px; /* Espaçamento entre o ícone e o texto */
+    margin-right: 7px; /* Espaçamento entre o íco#centerne e o texto */
 }
 
 /* Estilo para o ícone de modem */
