@@ -6,6 +6,8 @@
     <title>Internet</title>
     <link rel="stylesheet" href="estilos/tabela-internet.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 </head>
 <body>
     <header>
@@ -50,36 +52,36 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
+                        <tr id="plan1" class="cursor-pointer">
                             <th rowspan="5" id="center">INTERNET</th>
-                            <td>1000 Mega (Globoplay)</td>
-                            <td>até 1000 Mega </td>
-                            <td>100 Mega </td>
+                            <td>1 GIGA (Globoplay)</td>
+                            <td>até 1 GIGA</td>
+                            <td>100 Mega</td>
                             <td>R$299,90</td>
                             <td>R$299,90</td>
                         </tr>
-                        <tr>
+                        <tr id="plan750Mega" class="cursor-pointer">
                             <td>750 Mega (Globoplay)</td>
-                            <td>até 750 Mega </td>
-                            <td>50 Mega </td>
+                            <td>até 750 Mega</td>
+                            <td>50 Mega</td>
                             <td>R$154,90</td>
                             <td>R$149,90</td>
                         </tr>
-                        <tr>
+                        <tr id="plan500Mega" class="cursor-pointer">
                             <td>500 Mega (Globoplay)</td>
                             <td>até 500 Mega</td>
                             <td>50 Mega</td>
                             <td>R$124,90</td>
                             <td>R$119,90</td>
                         </tr>
-                        <tr>
+                        <tr id="plan350Mega" class="cursor-pointer">
                             <td>350 Mega (Globoplay)</td>
                             <td> até 350 Mega </td>
                             <td>35 Mega </td>
                             <td>R$104,90</td>
                             <td>R$99,90</td>
                         </tr>
-                        <tr>
+                        <tr id="plan250Mega" class="cursor-pointer">
                             <td>250 Mega</td>
                             <td>até 250 Mega </td>
                             <td>25 Mega </td>
@@ -88,14 +90,7 @@
                 
                         </tr>
                         <tr id="plano" class="plano ofertaRentabilidade hidden">
-                            <th rowspan="3" colspan="1" id="centerent">OFERTA RENTABILIDADE</th>
-                            <td>750 Mega (Globoplay)</td>
-                            <td>750 Mega </td>
-                            <td>50 Mega </td>
-                            <td>R$134,90</td>
-                            <td>R$129,90</td>
-                        </tr>
-                        <tr id="plano" class="plano ofertaRentabilidade hidden">
+                            <th rowspan="2" colspan="1" id="centerent">OFERTA RENTABILIDADE</th>
                             <td>500 Mega (Globoplay)</td>
                             <td>500 Mega </td>
                             <td>50 Mega </td>
@@ -154,57 +149,226 @@
             </div>
 
 
-            <div class="container mt-5">
-               
-                <table class="table table-striped">
-                    <thead>
-                        <tr>
-                            <td colspan="2" style="text-align: center; font-size: 1.2em;">Beneficios da internet</td>
-                        </tr>
-                        <tr id="center1">
-                            <th>Benefício</th>
-                            <th>Descrição</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Conectividade</td>
-                            <td>Acesso rápido e confiável à internet.</td>
-                        </tr>
-                        <tr>
-                            <td>Velocidade</td>
-                            <td>Download e upload de dados em alta velocidade.</td>
-                        </tr>
-                        <tr>
-                            <td>Streaming</td>
-                            <td>Transmissão de vídeos e músicas sem interrupções.</td>
-                        </tr>
-                        <tr>
-                            <td>Trabalho Remoto</td>
-                            <td>Possibilidade de trabalhar de casa de forma eficiente.</td>
-                        </tr>
-                        <tr>
-                            <td>Estabilidade na Conexão</td>
-                            <td>Conexão estável para uma experiência sem interrupções.</td>
-                        </tr>
-                        <tr>
-                            <td>Suporte 24/7</td>
-                            <td>Suporte técnico disponível 24h por dia, 7 dias por semana pelo número 10621.</td>
-                        </tr>
-                        <tr>
-                            <td>Wi-Fi Público</td>
-                            <td>Acesso a redes Wi-Fi públicas para maior conveniência.</td>
-                        </tr>
-                        <tr>
-                            <td>Serviços Adicionais</td>
-                            <td>Contratação de serviços adicionais à parte como Wi-Fi Plus (Dual Band) e Proteção Digital.</td>
-                        </tr>
-                        <!-- Adicione mais linhas conforme necessário -->
-                    </tbody>
-                </table>
-            </div>
+            <!-- Janela modal PLANO 1 GIGA -->
+        <div id="janelaModal1" class="modal">
+
+        <div class="modal-content">
+
+            <header id="headermodal">
+                <h1>Detalhes do plano de 1 GIGA</h1>
+                <span class="close">&times;</span> <!-- Botão de fechar -->
+            </header>
+
+            
+             <!-- Ícones de aplicativos personalizados -->
+        <div class="app-icons">
+
+            <img  style="max-width: 60px;" src="imagens/icones/icon-globoplay.png" alt="Globoplay" title="Globoplay">
+            <img  style="max-width: 60px;" src="imagens/icones/claro-video.png" alt="Claro Video" title="Claro Video">
+            <img  style="max-width: 80px;" src="imagens/icones/ponto-ultra.png" alt="Ponto Ultra" title="Ponto Ultra">
+            <img  style="max-width: 60px;" src="imagens/icones/skeelo.png" alt="Skeelo" title="Skeelo">
+            <img  style="max-width: 60px;" src="imagens/icones/cna-library.png" alt="CNA Library" title="CNA Library">
+            <img  style="max-width: 60px;" src="imagens/icones/busuu.png" alt="Busuu" title="Busuu">
+
         </div>
 
+            <main id="mainmodal">
+                <h2><i class="fas fa-wifi wifi-icon"></i>Wi-Fi grátis</h2>
+                    <p>para sua casa e wi-fi também fora de casa com a rede #NET-CLARO-WIFI</p>
+
+                <h2><i class="fas fa-download download-icon"></i>Download</h2>
+                    <p>até 1000 Mbps</p>
+                <h2><i class="fas fa-upload upload-icon"></i>Upload</h2>
+                    <p>até 100 Mbps</p>
+
+                <h2><i class="fas fa-play play-icon"></i>Globoplay incluso</h2>
+                    <p>plataforma de streaming com os conteúdos da Globo. Novelas, filmes, séries, especiais, esportes, BBB, podcasts, canais ao vivo e shows fazem parte do acervo.</p>
+
+                <h2 class="clarotv-title"><i class="fas fa-tv tv-icon"></i>Conteúdo Claro Vídeo - App Claro tv+</h2>
+                    <p>gratuito para todos os clientes Claro. São muitos filmes, séries, documentários, shows, conteúdos infantis, e muito mais. Para acessar o conteúdo Claro Vídeo, baixe o app Claro TV+ ou acesse www.clarotvmais.com.br. Não disponíveis os canais ao vivo.</p>
+
+                <h2><i class="fas fa-wifi wifi-icon"></i>Novo modem Wi-Fi 6</h2>
+                    <p>oferece mais alcance, estabilidade e velocidade de navegação no Wi-Fi para dispositivos compatíveis com a tecnologia. *Consulte a disponibilidade dos planos de internet com roteador Wi-Fi 6 em sua região.</p>
+
+                <h2><i class="fas fa-plug plug-icon"></i>Ponto Ultra incluso</h2>
+                    <p>Conexão via cabo de rede que leva o sinal da internet banda larga da Claro até o dispositivo que você precisa de mais velocidade e estabilidade.</p>
+            </main>
+
+        </div>
+    </div>
+
+    <!-- Janela modal PLANO 750 Mega -->
+    <div id="janelaModal750Mega" class="modal">
+
+        <div class="modal-content">
+
+            <header id="headermodal">
+                <h1>Detalhes do plano de 750 Mega</h1>
+                <span class="close">&times;</span> <!-- Botão de fechar -->
+            </header>
+
+        <!-- Ícones de aplicativos personalizados -->
+        <div class="app-icons">
+
+            <img  style="max-width: 60px;" src="imagens/icones/icon-globoplay.png" alt="Globoplay" title="Globoplay">
+            <img  style="max-width: 60px;" src="imagens/icones/claro-video.png" alt="Claro Video" title="Claro Video">
+            <img  style="max-width: 60px;" src="imagens/icones/mc-afee.jpeg" alt="Claro Video" title="mcafee">
+            <img  style="max-width: 60px;" src="imagens/icones/skeelo.png" alt="Skeelo" title="Skeelo">
+            <img  style="max-width: 60px;" src="imagens/icones/cna-library.png" alt="CNA Library" title="CNA Library">
+
+        </div>
+
+
+
+
+            <main id="mainmodal">
+                <h2><i class="fas fa-wifi wifi-icon"></i>Wi-Fi grátis</h2>
+                    <p>para sua casa e wi-fi também fora de casa com a rede #NET-CLARO-WIFI</p>
+
+                <h2><i class="fas fa-download download-icon"></i>Download</h2>
+                    <p>até 750 Mbps</p>
+
+                <h2><i class="fas fa-upload upload-icon"></i>Upload</h2>
+                    <p>até 50 Mbps</p>
+
+                <h2><i class="fas fa-play play-icon"></i>Globoplay incluso</h2>
+                    <p>plataforma de streaming com os conteúdos da Globo. Novelas, filmes, séries, especiais, esportes, BBB, podcasts, canais ao vivo e shows fazem parte do acervo.</p>
+
+                <h2 class="clarotv-title"><i class="fas fa-tv tv-icon"></i>Conteúdo Claro Vídeo - App Claro tv+</h2>
+                    <p>gratuito para todos os clientes Claro. São muitos filmes, séries, documentários, shows, conteúdos infantis, e muito mais. Para acessar o conteúdo Claro Vídeo, baixe o app Claro TV+ ou acesse www.clarotvmais.com.br. Não disponíveis os canais ao vivo.</p>
+
+                <h2><i class="fas fa-wifi wifi-icon"></i>Novo modem Wi-Fi 6</h2>
+                    <p>oferece mais alcance, estabilidade e velocidade de navegação no Wi-Fi para dispositivos compatíveis com a tecnologia. *Consulte a disponibilidade dos planos de internet com roteador Wi-Fi 6 em sua região.</p>
+
+            </main>
+
+        </div>
+    </div>
+
+
+    <!-- Janela modal PLANO 500 Mega -->
+    <div id="janelaModal500Mega" class="modal">
+
+        <div class="modal-content">
+
+            <header id="headermodal">
+                <h1>Detalhes do plano de 500 Mega</h1>
+                <span class="close">&times;</span> <!-- Botão de fechar -->
+            </header>
+        <!-- Ícones de aplicativos personalizados -->
+        <div class="app-icons">
+
+            <img  style="max-width: 60px;" src="imagens/icones/icon-globoplay.png" alt="Globoplay" title="Globoplay">
+            <img  style="max-width: 60px;" src="imagens/icones/claro-video.png" alt="Claro Video" title="Claro Video">
+            <img  style="max-width: 60px;" src="imagens/icones/mc-afee.jpeg" alt="Claro Video" title="mcafee">
+            <img  style="max-width: 60px;" src="imagens/icones/skeelo.png" alt="Skeelo" title="Skeelo">
+
+        </div>
+            <main id="mainmodal">
+                <h2><i class="fas fa-wifi wifi-icon"></i>Wi-Fi grátis</h2>
+                    <p>para sua casa e wi-fi também fora de casa com a rede #NET-CLARO-WIFI</p>
+
+                <h2><i class="fas fa-download download-icon"></i>Download</h2>
+                    <p>até 500 Mbps</p>
+
+                <h2><i class="fas fa-upload upload-icon"></i>Upload</h2>
+                    <p>até 50 Mbps</p>
+
+                <h2><i class="fas fa-play play-icon"></i>Globoplay incluso</h2>
+                    <p>plataforma de streaming com os conteúdos da Globo. Novelas, filmes, séries, especiais, esportes, BBB, podcasts, canais ao vivo e shows fazem parte do acervo.</p>
+
+                <h2 class="clarotv-title"><i class="fas fa-tv tv-icon"></i>Conteúdo Claro Vídeo - App Claro tv+</h2>
+                    <p>gratuito para todos os clientes Claro. São muitos filmes, séries, documentários, shows, conteúdos infantis, e muito mais. Para acessar o conteúdo Claro Vídeo, baixe o app Claro TV+ ou acesse www.clarotvmais.com.br. Não disponíveis os canais ao vivo.</p>
+
+                <h2><i class="fas fa-wifi wifi-icon"></i>Novo modem Wi-Fi 6</h2>
+                    <p>oferece mais alcance, estabilidade e velocidade de navegação no Wi-Fi para dispositivos compatíveis com a tecnologia. *Consulte a disponibilidade dos planos de internet com roteador Wi-Fi 6 em sua região.</p>
+
+            </main>
+
+        </div>
+    </div>
+
+        <!-- Janela modal PLANO 350 Mega -->
+        <div id="janelaModal350Mega" class="modal">
+
+            <div class="modal-content">
+
+                <header id="headermodal">
+                    <h1>Detalhes do plano de 350 Mega</h1>
+                    <span class="close">&times;</span> <!-- Botão de fechar -->
+                </header>
+            <!-- Ícones de aplicativos personalizados -->
+            <div class="app-icons">
+
+                <img  style="max-width: 60px;" src="imagens/icones/icon-globoplay.png" alt="Globoplay" title="Globoplay">
+                <img  style="max-width: 60px;" src="imagens/icones/claro-video.png" alt="Claro Video" title="Claro Video">
+                <img  style="max-width: 60px;" src="imagens/icones/mc-afee.jpeg" alt="Claro Video" title="mcafee">
+                <img  style="max-width: 60px;" src="imagens/icones/skeelo.png" alt="Skeelo" title="Skeelo">
+
+            </div>
+
+                <main id="mainmodal">
+                    <h2><i class="fas fa-wifi wifi-icon"></i>Wi-Fi grátis</h2>
+                        <p>para sua casa e wi-fi também fora de casa com a rede #NET-CLARO-WIFI</p>
+
+                    <h2><i class="fas fa-download download-icon"></i>Download</h2>
+                        <p>até 350 Mbps</p>
+
+                    <h2><i class="fas fa-upload upload-icon"></i>Upload</h2>
+                        <p>até 35 Mbps</p>
+
+                    <h2><i class="fas fa-play play-icon"></i>Globoplay incluso</h2>
+                        <p>plataforma de streaming com os conteúdos da Globo. Novelas, filmes, séries, especiais, esportes, BBB, podcasts, canais ao vivo e shows fazem parte do acervo.</p>
+
+                    <h2 class="clarotv-title"><i class="fas fa-tv tv-icon"></i>Conteúdo Claro Vídeo - App Claro tv+</h2>
+                        <p>gratuito para todos os clientes Claro. São muitos filmes, séries, documentários, shows, conteúdos infantis, e muito mais. Para acessar o conteúdo Claro Vídeo, baixe o app Claro TV+ ou acesse www.clarotvmais.com.br. Não disponíveis os canais ao vivo.</p>
+
+                <h2><i class="fas fa-wifi wifi-icon"></i>Novo modem Wi-Fi 6</h2>
+                    <p>oferece mais alcance, estabilidade e velocidade de navegação no Wi-Fi para dispositivos compatíveis com a tecnologia. *Consulte a disponibilidade dos planos de internet com roteador Wi-Fi 6 em sua região.</p>
+
+            </main>
+
+        </div>
+    </div>
+
+    <!-- Janela modal PLANO 250 Mega -->
+    <div id="janelaModal250Mega" class="modal">
+
+        <div class="modal-content">
+
+            <header id="headermodal">
+                <h1>Detalhes do plano de 250 Mega</h1>
+                <span class="close">&times;</span> <!-- Botão de fechar -->
+            </header>
+        <!-- Ícones de aplicativos personalizados -->
+        <div class="app-icons">
+            <img  style="max-width: 60px;" src="imagens/icones/mc-afee.jpeg" alt="Claro Video" title="mcafee">
+            <img  style="max-width: 60px;" src="imagens/icones/skeelo.png" alt="Skeelo" title="Skeelo">
+
+        </div>
+            <main id="mainmodal">
+                <h2><i class="fas fa-wifi wifi-icon"></i>Wi-Fi grátis</h2>
+                    <p>para sua casa e wi-fi também fora de casa com a rede #NET-CLARO-WIFI</p>
+
+                <h2><i class="fas fa-download download-icon"></i>Download</h2>
+                    <p>até 250 Mbps</p>
+
+                <h2><i class="fas fa-upload upload-icon"></i>Upload</h2>
+                    <p>até 25 Mbps</p>
+
+                <h2><i class="fas fa-play play-icon"></i>Globoplay incluso</h2>
+                    <p>plataforma de streaming com os conteúdos da Globo. Novelas, filmes, séries, especiais, esportes, BBB, podcasts, canais ao vivo e shows fazem parte do acervo.</p>
+
+                <h2 class="clarotv-title"><i class="fas fa-tv tv-icon"></i>Conteúdo Claro Vídeo - App Claro tv+</h2>
+                    <p>gratuito para todos os clientes Claro. São muitos filmes, séries, documentários, shows, conteúdos infantis, e muito mais. Para acessar o conteúdo Claro Vídeo, baixe o app Claro TV+ ou acesse www.clarotvmais.com.br. Não disponíveis os canais ao vivo.</p>
+
+            <h2><i class="fas fa-wifi wifi-icon"></i>Novo modem Wi-Fi 6</h2>
+                <p>oferece mais alcance, estabilidade e velocidade de navegação no Wi-Fi para dispositivos compatíveis com a tecnologia. *Consulte a disponibilidade dos planos de internet com roteador Wi-Fi 6 em sua região.</p>
+
+        </main>
+
+    </div>
+</div>
         
     </main>
 
