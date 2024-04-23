@@ -228,10 +228,10 @@ th,td {
 .modal-content {
     
     margin: auto; /* Centraliza horizontalmente */
-    margin-top: 10%; /* Ajusta a margem superior para centralizar verticalmente */
+    margin-top: 2%; /* Ajusta a margem superior para centralizar verticalmente */
     padding: 0; /* Remova o padding padrão */
     border: 1px solid #888;
-    height: 70%;
+    height: 90%;
     width: 80%;
     max-width: 800px; /* Largura máxima */
     overflow-x: auto; /* Adiciona rolagem lateral apenas */
