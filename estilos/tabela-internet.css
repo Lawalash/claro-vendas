@@ -204,11 +204,23 @@ th,td {
 
 .cursor-pointer:hover {
     cursor: pointer;
-    background-color: darkgray;
+    color:white;
+    background-color: rgb(169, 169, 169);
 }
 
 /* Estilo para remover o cursor pointer do th */
 .cursor-pointer th:hover {
+    cursor: auto;
+}
+
+.cursor-pointer1:hover {
+    cursor: pointer;
+    color:black;
+    background-color: rgb(169, 169, 169);
+}
+
+/* Estilo para remover o cursor pointer do th */
+.cursor-pointer1 th:hover {
     cursor: auto;
 }
 
