@@ -208,13 +208,8 @@ th,td {
 
 .cursor-pointer:hover {
     cursor: pointer;
-<<<<<<< HEAD
-    color: black;
-    background-color: darkgray;
-=======
     color:white;
     background-color: rgb(169, 169, 169);
->>>>>>> 4512bedb7b74fe213f97f285b3e63a9b0798e40b
 }
 
 /* Estilo para remover o cursor pointer do th */
@@ -394,10 +389,5 @@ th,td {
 /* Estilo para o ícone de conector */
 .plug-icon {
     font-size: 0.8em; /* Tamanho do ícone */
-    margin-right: 7px; /* Espaçamento entre o ícone e o texto */
-}
-<<<<<<< HEAD
+    margin-right: 7px; /* Espaçamento entre o ícone e o texto */}
 
-
-=======
->>>>>>> 4512bedb7b74fe213f97f285b3e63a9b0798e40b

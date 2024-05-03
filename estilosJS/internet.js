@@ -104,17 +104,6 @@ document.getElementById('janelaModal350Mega').getElementsByClassName('close')[0]
 });
 
 
-// PLANO 250 MEGAS
-// Função para abrir o modal do plano de 250 Mega ao passar o mouse e clicar na tabela
-document.getElementById('plan250Mega').addEventListener('click', function() {
-    document.getElementById('janelaModal250Mega').style.display = 'block'; // Usando 'janelaModal250Mega' para o modal do plano 250 Mega
-});
-
-// Função para fechar o modal ao clicar no botão de fechar dentro do modal do plano de 250 Mega
-document.getElementById('janelaModal250Mega').getElementsByClassName('close')[0].addEventListener('click', function() {
-    document.getElementById('janelaModal250Mega').style.display = 'none'; // Usando 'janelaModal250Mega' para o modal do plano 250 Mega
-});
-
 document.addEventListener('DOMContentLoaded', function () {
     var td500Mega = document.getElementById('td500Mega');
     var janelaModal500Mega = document.getElementById('janelaModal500Mega');
