@@ -26,6 +26,8 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
+    
+
     // Script para mostrar/ocultar janela modal ao clicar no botão "Exibir Lista de Cidades"
     var exibirListaButton = document.getElementById('exibirListaButton');
     var janelaModal = document.getElementById('janelaModal');

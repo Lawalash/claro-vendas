@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,15 +10,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 </head>
+
 <body>
     <header>
         <div class="menu-content">
             <div class="menu-toggle">
-                
+
             </div>
             <a href="home.html" class="logo">TABELA DE PREÇO</a>
 
-            
+
             <nav class="header-menu">
                 <ul class="list-itens">
                     <li><a href="#">INTERNET</a></li>
@@ -32,82 +34,172 @@
     </header>
 
 
-    
+
     <main>
         <div class="table-container" id="internetTable">
-            
+
             <div class="container mt-5">
                 <table class="table table-bordered table-controle">
                     <thead class="thead-dark" id="center1">
                         <tr>
-                            <tr class="trh1">
-                             <th colspan="7">INTERNET RESIDENCIAL</th>
-                            </tr>
+                            <th colspan="7">INTERNET RESIDENCIAL</th>
+                        </tr>
+
+                        <tr>
                             <th scope="col">Produtos</th>
                             <th scope="col">MegaBytes</th>
                             <th scope="col">Download</th>
                             <th scope="col">Upload</th>
                             <th scope="col">No boleto</th>
-                            <th scope="col">No débito automático</th>
+                            <th scope="col" colspan="2">No débito automático</th>
                         </tr>
+
                     </thead>
                     <tbody>
                         <tr id="plan1" class="cursor-pointer">
-                            <th rowspan="5" id="center">INTERNET</th>
-                            <td>1 GIGA (Globoplay)</td>
+                            <th rowspan="8" id="center">INTERNET</th>
+                            <td>1 GIGA (Globoplay) SINGLE (COM FONE OU APP)</td>
                             <td>até 1 GIGA</td>
                             <td>100 Mega</td>
                             <td>R$299,90</td>
-                            <td>R$299,90</td>
+                            <td colspan="2">R$299,90</td>
                         </tr>
+
+
+
                         <tr id="plan750Mega" class="cursor-pointer">
-                            <td>750 Mega (Globoplay)</td>
+                            <td>750 Mega (Globoplay) SINGLE (COM FONE OU APP)</td>
                             <td>até 750 Mega</td>
                             <td>50 Mega</td>
                             <td>R$154,90</td>
-                            <td>R$149,90</td>
+                            <td colspan="2">R$149,90</td>
                         </tr>
+
+                        <!-- 750 MEGA -->
+                        <div>
+                            <tr id="plano2" class="oferta1 hidden">
+                              <td>750 Mega (Globoplay) COM TV OU MÓVEL</td>
+                              <td>até 750 Mega</td>
+                              <td>50 Mega</td>
+                              <td>R$144,90</td>
+                              <td >R$139,90</td>
+                            </tr>
+                            <tr id="plano2" class="oferta1 hidden">
+                              <td>750 Mega (Globoplay) COM TV E MÓVEL</td>
+                              <td>até 750 Mega</td>
+                              <td>50 Mega</td>
+                              <td>R$134,90</td>
+                              <td>R$129,90</td>
+                            </tr>
+                          </div>
+                        <!-- FIM 750 MEGA -->
+                        
+
+
+                        
                         <tr id="plan500Mega" class="cursor-pointer">
-                            <td>500 Mega (Globoplay)</td>
+                            <td>500 Mega (Globoplay) SINGLE (COM FONE OU APP)</td>
                             <td>até 500 Mega</td>
                             <td>50 Mega</td>
                             <td>R$124,90</td>
-                            <td>R$119,90</td>
+                            <td colspan="2">R$119,90</td>
                         </tr>
+
+                        <!-- 500 MEGA -->
+                        <div>
+                            <tr id="plano2" class="oferta2 hidden">
+                              <td>500 Mega (Globoplay) COM TV OU MÓVEL</td>
+                              <td>até 500 Mega</td>
+                              <td>50 Mega</td>
+                              <td>R$114,90</td>
+                              <td >R$109,90</td>
+                            </tr>
+                            <tr id="plano2" class="oferta2 hidden">
+                              <td>500 Mega (Globoplay) COM TV E MÓVEL</td>
+                              <td>até 500 Mega</td>
+                              <td>50 Mega</td>
+                              <td>R$104,90</td>
+                              <td>R$99,90</td>
+                            </tr>
+                          </div>
+                        <!-- FIM 500 MEGA -->
+
+
                         <tr id="plan350Mega" class="cursor-pointer">
-                            <td>350 Mega (Globoplay)</td>
+                            <td>350 Mega (Globoplay) SINGLE (COM FONE OU APP)</td>
                             <td> até 350 Mega </td>
                             <td>35 Mega </td>
                             <td>R$104,90</td>
-                            <td>R$99,90</td>
+                            <td colspan="2">R$99,90</td>
                         </tr>
-                        <tr id="plan250Mega" class="cursor-pointer">
-                            <td>250 Mega</td>
-                            <td>até 250 Mega </td>
-                            <td>25 Mega </td>
-                            <td>R$84,90</td>
-                            <td>R$79,90</td>
-                
-                        </tr>
+                        
+                        <!-- 350 MEGA -->
+                        <div>
+                            <tr id="plano2" class="oferta3 hidden">
+                              <td>350 Mega (Globoplay) COM TV OU MÓVEL</td>
+                              <td>até 350 Mega</td>
+                              <td>35 Mega</td>
+                              <td>R$104,90</td>
+                              <td>R$99,90</td>
+                            </tr>
+                            <tr id="plano2" class="oferta3 hidden">
+                              <td>350 Mega (Globoplay) COM TV E MÓVEL</td>
+                              <td>até 350 Mega</td>
+                              <td>35 Mega</td>
+                              <td>R$104,90</td>
+                              <td>R$99,90</td>
+                            </tr>
+                          </div>
+                        <!-- FIM 350 MEGA -->
+                         
+
+
+                        
                         <tr id="plano" class="plano ofertaRentabilidade hidden">
                             <th rowspan="2" colspan="1" id="centerent">OFERTA RENTABILIDADE</th>
-                            <td>500 Mega (Globoplay)</td>
+                            <td>500 Mega (Globoplay) - DURANTE 6 MESES - ESCLUSIVO BASE MOVEL OU RESIDENCIAL</td>
                             <td>500 Mega </td>
                             <td>50 Mega </td>
-                            <td>R$104,90</td>
-                            <td>R$99,90</td>
+                            <td>R$54,90</td>
+                            <td>R$49,90</td>
                         </tr>
-                        <tr id="plano" class="plano ofertaRentabilidade hidden">
-                            <td>350 Mega (Globoplay)</td>
-                            <td>350 Mega </td>
-                            <td>35 Mega </td>
-                            <td>R$94,90</td>
-                            <td>R$89,90</td>
+                    
+                         <tr id="plano" class="plano ofertaRentabilidade hidden">
+                                <td>350 Mega (Globoplay)</td>
+                                <td>350 Mega </td>
+                                <td>35 Mega </td>
+                                <td>R$94,90</td>
+                                <td>R$89,90</td>
                         </tr>
+
+                           
+                            <tr>
+                                <td colspan="3"> <!-- Colspan deve ser ajustado para o número de colunas na tabela -->
+                                    <!-- Mini botões abaixo da tabela -->
+                                    <div class="row mt-3">
+                                        <div class="col">
+                                            <button id="oferta1" type="button" class="btn btn-sm btn-primary">OF-750</button>
+                                        </div>
+                                        <div class="col">
+                                            <button id="oferta2" type="button" class="btn btn-sm btn-primary">OF-500</button>
+                                        </div>
+                                        <div class="col">
+                                            <button id="oferta3" type="button" class="btn btn-sm btn-primary">OF-350</button>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td colspan="3"><strong>Clique nos botões e mostrará suas respectivas promoções.</strong></td>
+                            </tr>
+                            
+                           
+                             
 
                         <tr style="text-align: center;">
                             <th colspan="6"><button id="toggleButton" class="buttonth">Mostrar Oferta</button></th>
                         </tr>
+
+
+
                         <tr style="text-align: center; vertical-align: middle;">
                             <th>
                                 <a href="pdf-residencial/residencial.pdf">
@@ -131,7 +223,15 @@
 
                             </td>
 
-                            <td colspan="5">Em caso de duvidas, consulte o PDF (atualizado 09/04/2024) - basta clicar em cima pra acessar. Uma mostra RESIDENCIAL e a outra as ofertas de CHIP que vai no modem.</td>
+                            <td>
+                                <a href="pdf-residencial/cidades.pdf">
+                                    <img id="iconpdf" src="imagens/icon-pdf.png" alt="pdf">
+                                    <p><strong>lista de cidades</strong></p>
+                                </a>
+
+                            </td>
+
+                            <td colspan="2">Em caso de duvidas, consulte o PDF (atualizado 09/04/2024) - basta clicar em cima pra acessar. Uma mostra RESIDENCIAL e a outra as ofertas de CHIP que vai no modem.</td>
                         </tr>
                 
                 
