@@ -133,7 +133,7 @@ thead{
     color: black;
 }
 th{
-    font-size: 0,8em;
+    font-size: 1em;
 }
 .tr1{
     background-color: rgb(207, 207, 207);
@@ -152,6 +152,9 @@ th,td {
     margin-top: 25px;
     margin-bottom: 25px;
     text-align: center;
+}
+.menuofert{
+    background-color: darkgray;
 }
 
 #plano{
@@ -217,6 +220,7 @@ th,td {
     color:white;
     background-color: rgb(169, 169, 169);
 }
+
 
 /* Estilo para remover o cursor pointer do th */
 .cursor-pointer th:hover {
@@ -397,3 +401,115 @@ th,td {
     font-size: 0.8em; /* Tamanho do ícone */
     margin-right: 7px; /* Espaçamento entre o ícone e o texto */}
 
+
+/* MODAL PARA AS CIDADES */
+
+.modal2 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal2-content {
+    background-color: #fff;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 600px;
+    max-height: 80vh;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+.close2 {
+    color: #333;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.close2:hover,
+.close2:focus {
+    color: #555;
+}
+
+#pesquisarCidade {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#confirmarCidade {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#confirmarCidade:hover {
+    background-color: #0056b3;
+}
+
+.list-cidades {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list-cidades li {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.list-cidades li:hover {
+    background-color: #f0f0f0;
+}
+
+
+
+
+
+.fade-in {
+    animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Garante que o elemento fique sempre em cima */
+#respostaOferta {
+    z-index: 9999; /* Valor alto para ficar em cima de outros elementos */
+}
+
+
+.tabela-escondida {
+    display: none;
+}
+/* FIM DO MODAL PARA CIDADES*/
+
+
+
+/* CSS FIXA PARA AS PROMOÇÕES */
