@@ -8,10 +8,12 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-document.addEventListener('DOMContentLoaded', function () {
-    var toggleButton = document.getElementById('toggleButton');
-    var ofertaRentabilidade = document.querySelectorAll('.ofertaRentabilidade');
 
+
+//BOTÃO OF750
+document.addEventListener('DOMContentLoaded', function () {
+    var toggleButton = document.getElementById('of750Button'); // ID do botão
+    var ofertaRentabilidade = document.querySelectorAll('.of750'); // Classe das linhas
     toggleButton.addEventListener('click', function () {
         ofertaRentabilidade.forEach(function (linha) {
             linha.classList.toggle('hidden');
@@ -19,6 +21,34 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
+//BOTÃO OF500
+document.addEventListener('DOMContentLoaded', function () {
+    var toggleButton = document.getElementById('of500Button'); // ID do botão
+    var ofertaRentabilidade = document.querySelectorAll('.of500'); // Classe das linhas
+    toggleButton.addEventListener('click', function () {
+        ofertaRentabilidade.forEach(function (linha) {
+            linha.classList.toggle('hidden');
+        });
+    });
+});
+
+//BOTÃO OF350
+document.addEventListener('DOMContentLoaded', function () {
+    var toggleButton = document.getElementById('of350Button'); // ID do botão
+    var ofertaRentabilidade = document.querySelectorAll('.of350'); // Classe das linhas
+    toggleButton.addEventListener('click', function () {
+        ofertaRentabilidade.forEach(function (linha) {
+            linha.classList.toggle('hidden');
+        });
+    });
+});
+
+
+
+
+
+
+//=====================================================================================
 document.addEventListener('DOMContentLoaded', function () {
     // Botão OF-750
     var toggleButton1 = document.getElementById('oferta1');
@@ -103,22 +133,6 @@ document.getElementById('janelaModal350Mega').getElementsByClassName('close')[0]
     document.getElementById('janelaModal350Mega').style.display = 'none'; // Usando 'janelaModal350Mega' para o modal do plano 350 Mega
 });
 
-
-document.addEventListener('DOMContentLoaded', function () {
-    var td500Mega = document.getElementById('td500Mega');
-    var janelaModal500Mega = document.getElementById('janelaModal500Mega');
-    var closeModal500Mega = document.getElementById('closeModal500Mega');
-
-    // Função para abrir o modal ao clicar no <td> "500 Mega"
-    td500Mega.addEventListener('click', function () {
-        janelaModal500Mega.style.display = 'block';
-    });
-
-    // Função para fechar o modal ao clicar no botão de fechar
-    closeModal500Mega.addEventListener('click', function () {
-        janelaModal500Mega.style.display = 'none';
-    });
-});
 
 
 

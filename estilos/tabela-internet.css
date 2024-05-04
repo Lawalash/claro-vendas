@@ -156,7 +156,13 @@ th,td {
 
 #plano{
     background-color: darkgray;
-    color: black; 
+    color: white;
+    text-align: bolder; 
+}
+#plano1{
+    background-color: rgb(49, 49, 49);
+    color: white;
+    text-align: bolder; 
 }
 #plano2{
     background-color: rgb(87, 87, 87);
