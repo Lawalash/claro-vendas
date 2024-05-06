@@ -261,6 +261,8 @@ function mostrarTabelaDoGrupo(cidadeDigitada) {
     'Nova Petropolis-RS': 'ESPECIAL+ COM PROMO 3M',
     'Osorio-RS': 'ESPECIAL+ COM PROMO 3M',
     'Palmeira Das Missoes-RS': 'ESPECIAL+ COM PROMO 3M',
+
+        
     'Panambi-RS': 'ESPECIAL+ COM PROMO 3M',
     'Paranagua-PR': 'ESPECIAL+ COM PROMO 3M',
     'Parobe-RS': 'ESPECIAL+ COM PROMO 3M',
@@ -412,6 +414,9 @@ function mostrarTabelaDoGrupo(cidadeDigitada) {
   'Vespasiano-MG': 'ESPECIAL+ COM PROMO 3M',
   'Vicosa-MG': 'ESPECIAL+ COM PROMO 3M',
   'Votuporanga-SP': 'ESPECIAL+ COM PROMO 3M',
+
+
+        
   'Cacoal-RO': 'ESPECIAL+ COM PROMO 3M',
   'Castanhal-PA': 'ESPECIAL+ COM PROMO 3M',
   'Gurupi-TO': 'ESPECIAL+ COM PROMO 3M',
@@ -498,6 +503,25 @@ function mostrarTabelaDoGrupo(cidadeDigitada) {
   'Rondonopolis-MT': 'ESPECIAL+ COM PROMO 3M',
   'Caruaru-PE': 'ESPECIAL+ COM PROMO 3M',
   'Vitoria Da Conquista-BA': 'ESPECIAL+ COM PROMO 3M'
+    'Formosa-GO': 'ESPECIAL+ COM PROMO 3M',
+    'Itumbiara-GO': 'ESPECIAL+ COM PROMO 3M',
+    'Jatai-GO': 'ESPECIAL+ COM PROMO 3M',
+    'Lucas Do Rio Verde-MT': 'ESPECIAL+ COM PROMO 3M',
+    'Navirai-MS': 'ESPECIAL+ COM PROMO 3M',
+    'Nova Mutum-MT': 'ESPECIAL+ COM PROMO 3M',
+    'Ponta Pora-MS': 'ESPECIAL+ COM PROMO 3M',
+    'Rio Verde-GO': 'ESPECIAL+ COM PROMO 3M',
+    'Santa Helena De Goias-GO': 'ESPECIAL+ COM PROMO 3M',
+    'Senador Canedo-GO': 'ESPECIAL+ COM PROMO 3M',
+    'Sinop-MT': 'ESPECIAL+ COM PROMO 3M',
+    'Sorriso-MT': 'ESPECIAL+ COM PROMO 3M',
+    'Tres Lagoas-MS': 'ESPECIAL+ COM PROMO 3M',
+    'Trindade-GO': 'ESPECIAL+ COM PROMO 3M',
+    'Valparaiso De Goias-GO': 'ESPECIAL+ COM PROMO 3M',
+    'Araguaina-TO': 'ESPECIAL+ COM PROMO 3M',
+    'Ariquemes-RO': 'ESPECIAL+ COM PROMO 3M',
+    'Cacoal-RO': 'ESPECIAL+ COM PROMO 3M',
+    'Castanhal-PA': 'ESPECIAL+ COM PROMO 3M'
 
     };
 
