@@ -502,7 +502,7 @@ function mostrarTabelaDoGrupo(cidadeDigitada) {
   'Dourados-MS': 'ESPECIAL+ COM PROMO 3M',
   'Rondonopolis-MT': 'ESPECIAL+ COM PROMO 3M',
   'Caruaru-PE': 'ESPECIAL+ COM PROMO 3M',
-  'Vitoria Da Conquista-BA': 'ESPECIAL+ COM PROMO 3M'
+  'Vitoria Da Conquista-BA': 'ESPECIAL+ COM PROMO 3M',
     'Formosa-GO': 'ESPECIAL+ COM PROMO 3M',
     'Itumbiara-GO': 'ESPECIAL+ COM PROMO 3M',
     'Jatai-GO': 'ESPECIAL+ COM PROMO 3M',
