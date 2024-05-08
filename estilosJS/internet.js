@@ -630,6 +630,9 @@ function mostrarTabelaDoGrupo(cidadeDigitada) {
   'Santa Cruz de Minas-MG': 'ESPECIAL+ REDES NEUTRAS',
   'Santa Rita Do Sapucai-MG': 'ESPECIAL+ REDES NEUTRAS',
   'Sao Sebastiao do Paraiso-MG': 'ESPECIAL+ REDES NEUTRAS',
+  'Santa Maria-DF':'EXCLUSIVO NODE',
+  'Planaltina-DF':'EXCLUSIVO NODE',
+  
 
 
 
