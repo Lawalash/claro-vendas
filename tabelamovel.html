@@ -44,6 +44,11 @@
                         <tr class="trh1">
                             <th colspan="9">PLANO CONTROLE</th>
                         </tr>
+                        <tr style="background-color: rgba(83, 83, 83, 0.39);">
+                            <td colspan="9">
+                                <button id="exibirListaButton" class="buttonth" data-target="janelaModal">Exibir Lista de Cidades</button>
+                            </td>
+                        </tr>
                         <tr>
                             <th scope="col">PRODUTO</th>
                             <th scope="col">BONUS DE REDES SOCIAIS E APP DE VIDEOS</th>
@@ -138,6 +143,200 @@
                             <td>CONTROLE 25G GAMING S/AP PAD</td>
                             <td>POKEMON GO, ASPHALT 9 LEGENDS E GARENA FREE FIRE + PERKS (BRINDES DENTRO DOS JOGOS COMO ARMAS, SKINS, MAPAS, ETC)</td>
                         </tr>
+
+                        <!-- Janela modal -->
+
+                        <div id="janelaModal" class="modal2" style="display: none;">
+
+                            <div class="modal2-content">
+                    
+                            <hedaer id="headercidade">
+                    
+                                <span class="close2">&times;</span>
+                                <h2 class="text-center">Selecione a cidade</h2>
+                                <input type="text" id="pesquisarCidade" placeholder="Pesquisar cidade...">
+                                <button id="confirmarCidade">Confirmar</button>
+                                
+                            </hedaer>
+                    
+                            <main id="maincidade">
+                                <ul id="listaCidadesModal" class="list-cidades">
+                                            <!-- AQUISIÇÃO CONTROLE -->
+                                            <li>Aracruz-ES</li>
+                                            <li>Cariacica-ES</li>
+                                            <li>Colatina-ES</li>
+                                            <li>Serra-ES</li>
+                                            <li>Belo Horizonte-MG</li>
+                                            <li>Betim-MG</li>
+                                            <li>Conselheiro Lafaiete-MG</li>
+                                            <li>Contagem-MG</li>
+                                            <li>Coronel Fabriciano-MG</li>
+                                            <li>Ipatinga-MG</li>
+                                            <li>Itabira-MG</li>
+                                            <li>Joao Monlevade-MG</li>
+                                            <li>Lagoa Santa-MG</li>
+                                            <li>Matozinhos-MG</li>
+                                            <li>Nova Lima-MG</li>
+                                            <li>Pedro Leopoldo-MG</li>
+                                            <li>Sabara-MG</li>
+                                            <li>Santa Cruz de Minas-MG</li>
+                                            <li>Santa Luzia-MG</li>
+                                            <li>Sete Lagoas-MG</li>
+                                            <li>Timoteo-MG</li>
+                                            <li>Vespasiano-MG</li>
+                                            <li>Vicosa-MG</li>
+                                            <li>Almirante Tamandare-PR</li>
+                                            <li>Araucaria-PR</li>
+                                            <li>Campo Largo-PR</li>
+                                            <li>Colombo-PR</li>
+                                            <li>Curitiba-PR</li>
+                                            <li>Fazenda Rio Grande-PR</li>
+                                            <li>Guaratuba-PR</li>
+                                            <li>Paranagua-PR</li>
+                                            <li>Pinhais-PR</li>
+                                            <li>Piraquara-PR</li>
+                                            <li>Quatro Barras-PR</li>
+                                            <li>Sao Jose Dos Pinhais-PR</li>
+                                            <li>Ararangua-SC</li>
+                                            <li>Biguacu-SC</li>
+                                            <li>Criciuma-SC</li>
+                                            <li>Florianopolis-SC</li>
+                                            <li>Palhoca-SC</li>
+                                            <li>Tubarao-SC</li>
+                                            <li>Camacari-BA</li>
+                                            <li>Lauro De Freitas-BA</li>
+                                            <li>Mata De Sao Joao-BA</li>
+                                            <li>Salvador-BA</li>
+                                            <li>Vila Velha-ES</li>
+                                            <li>Vitoria-ES</li>
+                                            <li>Juiz De Fora-MG</li>
+                                            <li>Muriae-MG</li>
+                                            <li>Manhuacu-MG</li>
+                                            <li>Uberaba-MG</li>
+                                            <li>Uberlandia-MG</li>
+                                            <li>Lavras-MG</li>
+                                            <li>Pouso Alegre-MG</li>
+                                            <li>Varginha-MG</li>
+                                            <li>Divinopolis-MG</li>
+                                            <li>Formiga-MG</li>
+                                            <li>Itauna-MG</li>
+                                            <li>Montes Claros-MG</li>
+                                            <li>Sao Jose-SC</li>
+                                            <li>Camacari-BA</li>
+                                            <li>Manaus-AM</li>
+                                        <!-- AQUISIÇÃO PÓS PAGO -->
+                                            <li>Aracruz-ES (2)</li>
+                                            <li>Cariacica-ES (2)</li>
+                                            <li>Colatina-ES (2)</li>
+                                            <li>Manaus-AM(2)</li>
+                                            <li>Serra-ES (2)</li>
+                                            <li>Belo Horizonte-MG (2)</li>
+                                            <li>Betim-MG (2)</li>
+                                            <li>Conselheiro Lafaiete-MG (2)</li>
+                                            <li>Contagem-MG (2)</li>
+                                            <li>Coronel Fabriciano-MG (2)</li>
+                                            <li>Ipatinga-MG (2)</li>
+                                            <li>Itabira-MG (2)</li>
+                                            <li>Joao Monlevade-MG (2)</li>
+                                            <li>Lagoa Santa-MG (2)</li>
+                                            <li>Matozinhos-MG (2)</li>
+                                            <li>Nova Lima-MG (2)</li>
+                                            <li>Pedro Leopoldo-MG (2)</li>
+                                            <li>Sabara-MG (2)</li>
+                                            <li>Santa Cruz de Minas-MG (2)</li>
+                                            <li>Santa Luzia-MG (2)</li>
+                                            <li>Sete Lagoas-MG (2)</li>
+                                            <li>Timoteo-MG (2)</li>
+                                            <li>Vespasiano-MG (2)</li>
+                                            <li>Almirante Tamandare-PR (2)</li>
+                                            <li>Araucaria-PR (2)</li>
+                                            <li>Campo Largo-PR (2)</li>
+                                            <li>Colombo-PR (2)</li>
+                                            <li>Curitiba-PR (2)</li>
+                                            <li>Fazenda Rio Grande-PR (2)</li>
+                                            <li>Guaratuba-PR (2)</li>
+                                            <li>Paranagua-PR (2)</li>
+                                            <li>Pinhais-PR (2)</li>
+                                            <li>Piraquara-PR (2)</li>
+                                            <li>Quatro Barras-PR (2)</li>
+                                            <li>Sao Jose Dos Pinhais-PR (2)</li>
+                                            <li>Ararangua-SC (2)</li>
+                                            <li>Biguacu-SC (2)</li>
+                                            <li>Criciuma-SC (2)</li>
+                                            <li>Florianopolis-SC (2)</li>
+                                            <li>Palhoca-SC (2)</li>
+                                            <li>Tubarao-SC (2)</li>
+                                            <li>Camacari-BA (2)</li>
+                                            <li>Lauro De Freitas-BA (2)</li>
+                                            <li>Mata De Sao Joao-BA (2)</li>
+                                            <li>Salvador-BA (2)</li>
+
+                                            <li>Viçosa-MG</li>
+                                            <li>São José dos Pinhais-PR</li>
+                                            <li>Araranguá-SC</li>
+                                            <li>Biguaçu-SC</li>
+                                            <li>Criciúma-SC</li>
+                                            <li>Florianópolis-SC</li>
+                                            <li>Palhoça-SC</li>
+                                            <li>Tubarão-SC</li>
+                                            <li>Camaçari-BA</li>
+                                            <li>Lauro de Freitas-BA</li>
+                                            <li>Mata de São João-BA</li>
+                                            
+
+                                            
+                                    </ul>
+                            </main>
+                        </div>
+                    </div>
+
+                    
+                    <div class="container mt-5">
+                
+                        <table id="AQUISIÇÃO CONTROLE" class="table table-bordered tabela-escondida ">
+                            <thead class="thead-dark">
+                                <tr class="trh1">
+                                    <th colspan="9">PROMO CONTROLE</th>
+                                </tr>
+                                <tr>
+                                    <th scope="col">PRODUTO</th>
+                                    <th scope="col">BONUS DE REDES SOCIAIS E APP DE VIDEOS</th>
+                                    <th scope="col">PARA REDES SOCIAIS E APPS DE VIDEOS</th>
+                                    <th scope="col">PREÇO NO BOLETO</th>
+                                    <th scope="col">PREÇO NO DÉBITO</th>
+                                    <th scope="col">APP ILIMITADO</th>
+                                    <th scope="col">NOMENCLATURA</th>
+                                    <th scope="col">ASSINATURA INCLUSA</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Claro Net Celular - Controle 20GB</td>
+                                    <td>3GB</td>
+                                    <td>
+                                        
+                                        <img class="logo-app" src="imagens/icones/icon-youtube.png" alt="WhatsApp">
+                                    
+                                    </td>
+                                    <td>R$44,90</td>
+                                    <td>R$39,90</td>
+                                    <td>
+                                        
+                                        <img class="logo-app" src="imagens/icones/icon-wpp.png" alt="WhatsApp">
+                                    
+                                    </td>
+                                    <td>CONTROLE 15GB S/AP PAD</td>
+                                    <td>-</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                </div>
+                                
+
+
+
                         
 
             <div class="container mt-5">
@@ -146,6 +345,11 @@
                     <thead class="thead-dark">
                         <tr class="trh1">
                             <th colspan="9">PLANO PÓS PAGO</th>
+                        </tr>
+                        <tr style="background-color: rgba(83, 83, 83, 0.39); text-align: center;">
+                            <td colspan="9">
+                                <button id="exibirListaButtonPosPago" class="buttonth" data-target="janelaModal">Exibir Lista de Cidades</button>
+                            </td>
                         </tr>
                         <tr>
                             <th scope="col">PRODUTO</th>
@@ -267,6 +471,60 @@
             </div>
             
         </div>
+
+
+        <div class="container mt-5">
+                
+            <table id="AQUISIÇÃO PÓS" class="table table-bordered tabela-escondida ">
+                <thead class="thead-dark">
+                    <tr class="trh1">
+                        <th colspan="8">PROMO PÓS PAGO</th>
+                    </tr>
+                
+
+                    <tr>
+                        <th scope="col">PRODUTO</th>
+                        <th scope="col">FRANQUIA EXTRA PLAY</th>
+                        <th scope="col">FRANQUIA TOTAL</th>
+                        <th scope="col">PREÇO NO BOLETO</th>
+                        <th scope="col">PREÇO NO DÉBITO</th>
+                        <th scope="col">PASSAPORTE INCLUSO</th>
+                        <th scope="col">NOMENCLATURA</th>
+                        <th scope="col">APPS PARA UTILIZAR</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Claro Net Celular - Pós pago 25GB</td>
+                        <td>25GB</td>
+                        <td>50GB</td>
+                        <td>R$69,90</td>
+                        <td>R$59,90</td>
+                        <td>AMÉRICAS TITULAR</td>
+                        <td>POS 25GB S/AP PAD</td>
+                        <td rowspan="2">
+                            <img class="logo-app2" src="imagens/icones/icon-disney.png">
+                            <img class="logo-app2" src="imagens/icones/icon-netflix.png">
+                            <img class="logo-app2" src="imagens/icones/icon-youtube.png">
+                            <img class="logo-app2" src="imagens/icones/icon-clarotv.png">
+                            <img class="logo-app2" src="imagens/icones/icon-hbo.png">
+                            <img class="logo-app2" src="imagens/icones/icon-disney.png">
+                            <img class="logo-app2" src="imagens/icones/icon-globoplay.png">
+                            <img class="logo-app2" src="imagens/icones/icon-tiktok.png">
+                            <img class="logo-app2" src="imagens/icones/icon-star.png">
+                            <img class="logo-app2" src="imagens/icones/icon-instagram.png">
+                            <img class="logo-app2" src="imagens/icones/icon-facebook.png">
+                            <img class="logo-app2" src="imagens/icones/icon-twitter.png">
+                            <!-- Adicione mais logos conforme necessário -->
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+    </div>
+
+
     </main>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
