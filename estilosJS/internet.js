@@ -43,44 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-
-
-
-
-
-//=====================================================================================
-document.addEventListener('DOMContentLoaded', function () {
-    // Botão OF-750
-    var toggleButton1 = document.getElementById('oferta1');
-    var ofertaRentabilidade1 = document.querySelectorAll('.oferta1');
-
-    toggleButton1.addEventListener('click', function () {
-        ofertaRentabilidade1.forEach(function (linha) {
-            linha.classList.toggle('hidden');
-        });
-    });
-
-    // Botão OF-500
-    var toggleButton2 = document.getElementById('oferta2');
-    var ofertaRentabilidade2 = document.querySelectorAll('.oferta2');
-
-    toggleButton2.addEventListener('click', function () {
-        ofertaRentabilidade2.forEach(function (linha) {
-            linha.classList.toggle('hidden');
-        });
-    });
-
-    // Botão OF-350
-    var toggleButton3 = document.getElementById('oferta3');
-    var ofertaRentabilidade3 = document.querySelectorAll('.oferta3');
-
-    toggleButton3.addEventListener('click', function () {
-        ofertaRentabilidade3.forEach(function (linha) {
-            linha.classList.toggle('hidden');
-        });
-    });
-});
-
+//==============================================================
 
 // PLANO 1 GIGA
 // Função para abrir o modal ao passar o mouse e clicar na tabela
