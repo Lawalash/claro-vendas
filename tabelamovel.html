@@ -1,535 +1,87 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Móvel</title>
-    <link rel="stylesheet" href="estilos/tabela-movel.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    
+    <title>Document</title>
+    <link rel="stylesheet" href="teste.css">
 </head>
 <body>
     
-
-    <header>
-        <div class="menu-content">
-            <div class="menu-toggle">
-                
+        <div class="box-of-star1">
+            <div class="star star-position1"></div>
+            <div class="star star-position2"></div>
+            <div class="star star-position3"></div>
+            <div class="star star-position4"></div>
+            <div class="star star-position5"></div>
+            <div class="star star-position6"></div>
+            <div class="star star-position7"></div>
+          </div>
+          <div class="box-of-star2">
+            <div class="star star-position1"></div>
+            <div class="star star-position2"></div>
+            <div class="star star-position3"></div>
+            <div class="star star-position4"></div>
+            <div class="star star-position5"></div>
+            <div class="star star-position6"></div>
+            <div class="star star-position7"></div>
+          </div>
+          <div class="box-of-star3">
+            <div class="star star-position1"></div>
+            <div class="star star-position2"></div>
+            <div class="star star-position3"></div>
+            <div class="star star-position4"></div>
+            <div class="star star-position5"></div>
+            <div class="star star-position6"></div>
+            <div class="star star-position7"></div>
+          </div>
+          <div class="box-of-star4">
+            <div class="star star-position1"></div>
+            <div class="star star-position2"></div>
+            <div class="star star-position3"></div>
+            <div class="star star-position4"></div>
+            <div class="star star-position5"></div>
+            <div class="star star-position6"></div>
+            <div class="star star-position7"></div>
+          </div>
+          <div data-js="astro" class="astronaut">
+            <div class="head"></div>
+            <div class="arm arm-left"></div>
+            <div class="arm arm-right"></div>
+            <div class="body">
+              <div class="panel"></div>
             </div>
-            <a href="home.html" class="logo">TABELA DE PREÇO</a>
-
-            
-            <nav>
-                <ul class="list-itens">
-                    <li><a href="tabelainternet.html">INTERNET</a></li>
-                    <li><a href="tabelaclarotv.html">CLARO TV BOX</a></li>
-                    <li><a onclick="return false;" href="tabelamovel.html">MÓVEL</a></li>
-                    <li><a href="tabelafixo.html">FIXO</a></li>
-                    <li><a href="calculadora.html">MONTE SEU PLANO</a></li>
-                    <li><a href="tabelacheck.html">CHECKLIST</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    
-    <main id="tabelaMovel" style="display: none;">
-        <p id="respostaOferta" class="fade-in" style="display: none; position: fixed; top: 0; left: 50%; transform: translateX(-50%); background-color: #f0f0f0; padding: 10px; border-bottom: 1px solid #ccc;"></p>
-
-
-            <div class="container mt-5">
-                
-                <table class="table table-bordered table-controle">
-                    <thead class="thead-dark">
-                        <tr class="trh1">
-                            <th colspan="9">PLANO CONTROLE</th>
-                        </tr>
-                        <tr style="background-color: rgba(83, 83, 83, 0.39);">
-                            <td colspan="9">
-                                <button id="exibirListaButton" class="buttonth" data-target="janelaModal">Exibir Lista de Cidades</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="col">PRODUTO</th>
-                            <th scope="col">BONUS DE REDES SOCIAIS E APP DE VIDEOS</th>
-                            <th scope="col" id="maes">OFERTA DIA DAS MÃES (12 MESES)</th>
-                            <th scope="col">PARA REDES SOCIAIS E APPS DE VIDEOS</th>
-                            <th scope="col">PREÇO NO BOLETO</th>
-                            <th scope="col">PREÇO NO DÉBITO</th>
-                            <th scope="col">APP ILIMITADO</th>
-                            <th scope="col">NOMENCLATURA</th>
-                            <th scope="col">ASSINATURA INCLUSA</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Claro Net Celular - Controle 20GB</td>
-                            <td>3GB</td>
-                            <td><strong>-</strong></td>
-                            <td>
-                                
-                                <img class="logo-app" src="imagens/icones/icon-youtube.png" alt="WhatsApp">
-                            
-                            </td>
-                            <td>R$49,90</td>
-                            <td>R$44,90</td>
-                            <td>
-                                
-                                <img class="logo-app" src="imagens/icones/icon-wpp.png" alt="WhatsApp">
-                            
-                            </td>
-                            <td>CONTROLE 20GB S/AP SEG CONC AQS</td>
-                            <td>-</td>
-                        </tr>
-
-                        <tr>
-                            <td>Claro Net Celular - Controle 20GB</td>
-                            <td>3GB</td>
-                            <td id="mae">5GB</td>
-                            <td>
-                                
-                                <img class="logo-app" src="imagens/icones/icon-youtube.png" alt="WhatsApp">
-                            
-                            </td>
-                            <td>R$54,90</td>
-                            <td>R$49,90</td>
-                            <td>
-                                
-                                <img class="logo-app" src="imagens/icones/icon-wpp.png" alt="WhatsApp">
-                            
-                            </td>
-                            <td>CONTROLE 20GB S/AP PAD</td>
-                            <td>-</td>
-                        </tr>
-
-
-
-
-
-
-                        <tr>
-                            <td>Claro Net Celular - Controle 25GB</td>
-                            <td>5GB</td>
-                            <td id="mae">5GB</td>
-                            <td rowspan="2">
-
-                                <img class="logo-app" src="imagens/icones/icon-youtube.png" alt="WhatsApp">
-                                <img class="logo-app" src="imagens/icones/icon-facebook.png" alt="WhatsApp">
-                                <img class="logo-app" src="imagens/icones/icon-tiktok.png" alt="WhatsApp">
-                                <img class="logo-app" src="imagens/icones/icon-twitter.png" alt="WhatsApp">
-                                <img class="logo-app" src="imagens/icones/icon-instagram.png" alt="WhatsApp">
-                            
-                            </td>
-                            <td>R$64,90</td>
-                            <td>R$59,90</td>
-                            <td>
-                                <img class="logo-app" src="imagens/icones/icon-wpp.png" alt="WhatsApp">
-                            
-                            </td>
-                            <td>CONTROLE 30GB S/AP PAD</td>
-                            <td>-</td>
-                        </tr>
-                        <tr>
-                            <td>Claro Net Celular - Controle 30GB GAMING</td>
-                            <td>5GB</td>
-                            <td>-</td>
-                            <td>R$74,90</td>
-                            <td>R$69,90</td>
-                            <td>
-                                
-                                <img class="logo-app" src="imagens/icones/icon-wpp.png" alt="WhatsApp">
-                            
-                            </td>
-                            <td>CONTROLE 25G GAMING S/AP PAD</td>
-                            <td>POKEMON GO, ASPHALT 9 LEGENDS E GARENA FREE FIRE + PERKS (BRINDES DENTRO DOS JOGOS COMO ARMAS, SKINS, MAPAS, ETC)</td>
-                        </tr>
-
-                        <!-- Janela modal -->
-
-                        <div id="janelaModal" class="modal2" style="display: none;">
-
-                            <div class="modal2-content">
-                    
-                            <hedaer id="headercidade">
-                    
-                                <span class="close2">&times;</span>
-                                <h2 class="text-center">Selecione a cidade</h2>
-                                <input type="text" id="pesquisarCidade" placeholder="Pesquisar cidade...">
-                                <button id="confirmarCidade">Confirmar</button>
-                                
-                            </hedaer>
-                    
-                            <main id="maincidade">
-                                <ul id="listaCidadesModal" class="list-cidades">
-                                            <!-- AQUISIÇÃO CONTROLE -->
-                                            <li>Aracruz-ES</li>
-                                            <li>Cariacica-ES</li>
-                                            <li>Colatina-ES</li>
-                                            <li>Serra-ES</li>
-                                            <li>Belo Horizonte-MG</li>
-                                            <li>Betim-MG</li>
-                                            <li>Conselheiro Lafaiete-MG</li>
-                                            <li>Contagem-MG</li>
-                                            <li>Coronel Fabriciano-MG</li>
-                                            <li>Ipatinga-MG</li>
-                                            <li>Itabira-MG</li>
-                                            <li>Joao Monlevade-MG</li>
-                                            <li>Lagoa Santa-MG</li>
-                                            <li>Matozinhos-MG</li>
-                                            <li>Nova Lima-MG</li>
-                                            <li>Pedro Leopoldo-MG</li>
-                                            <li>Sabara-MG</li>
-                                            <li>Santa Cruz de Minas-MG</li>
-                                            <li>Santa Luzia-MG</li>
-                                            <li>Sete Lagoas-MG</li>
-                                            <li>Timoteo-MG</li>
-                                            <li>Vespasiano-MG</li>
-                                            <li>Vicosa-MG</li>
-                                            <li>Almirante Tamandare-PR</li>
-                                            <li>Araucaria-PR</li>
-                                            <li>Campo Largo-PR</li>
-                                            <li>Colombo-PR</li>
-                                            <li>Curitiba-PR</li>
-                                            <li>Fazenda Rio Grande-PR</li>
-                                            <li>Guaratuba-PR</li>
-                                            <li>Paranagua-PR</li>
-                                            <li>Pinhais-PR</li>
-                                            <li>Piraquara-PR</li>
-                                            <li>Quatro Barras-PR</li>
-                                            <li>Sao Jose Dos Pinhais-PR</li>
-                                            <li>Ararangua-SC</li>
-                                            <li>Biguacu-SC</li>
-                                            <li>Criciuma-SC</li>
-                                            <li>Florianopolis-SC</li>
-                                            <li>Palhoca-SC</li>
-                                            <li>Tubarao-SC</li>
-                                            <li>Camacari-BA</li>
-                                            <li>Lauro De Freitas-BA</li>
-                                            <li>Mata De Sao Joao-BA</li>
-                                            <li>Salvador-BA</li>
-                                            <li>Vila Velha-ES</li>
-                                            <li>Vitoria-ES</li>
-                                            <li>Juiz De Fora-MG</li>
-                                            <li>Muriae-MG</li>
-                                            <li>Manhuacu-MG</li>
-                                            <li>Uberaba-MG</li>
-                                            <li>Uberlandia-MG</li>
-                                            <li>Lavras-MG</li>
-                                            <li>Pouso Alegre-MG</li>
-                                            <li>Varginha-MG</li>
-                                            <li>Divinopolis-MG</li>
-                                            <li>Formiga-MG</li>
-                                            <li>Itauna-MG</li>
-                                            <li>Montes Claros-MG</li>
-                                            <li>Sao Jose-SC</li>
-                                            <li>Camacari-BA</li>
-                                            <li>Manaus-AM</li>
-                                        <!-- AQUISIÇÃO PÓS PAGO -->
-                                        <li>Aracruz-ES (pós)</li>
-                                        <li>Cariacica-ES (pós)</li>
-                                        <li>Colatina-ES (pós)</li>
-                                        <li>Manaus-AM (pós)</li>
-                                        <li>Serra-ES (pós)</li>
-                                        <li>Belo Horizonte-MG (pós)</li>
-                                        <li>Betim-MG (pós)</li>
-                                        <li>Conselheiro Lafaiete-MG (pós)</li>
-                                        <li>Contagem-MG (pós)</li>
-                                        <li>Coronel Fabriciano-MG (pós)</li>
-                                        <li>Ipatinga-MG (pós)</li>
-                                        <li>Itabira-MG (pós)</li>
-                                        <li>Joao Monlevade-MG (pós)</li>
-                                        <li>Lagoa Santa-MG (pós)</li>
-                                        <li>Matozinhos-MG (pós)</li>
-                                        <li>Nova Lima-MG (pós)</li>
-                                        <li>Pedro Leopoldo-MG (pós)</li>
-                                        <li>Sabara-MG (pós)</li>
-                                        <li>Santa Cruz de Minas-MG (pós)</li>
-                                        <li>Santa Luzia-MG (pós)</li>
-                                        <li>Sete Lagoas-MG (pós)</li>
-                                        <li>Timoteo-MG (pós)</li>
-                                        <li>Vespasiano-MG (pós)</li>
-                                        <li>Almirante Tamandare-PR (pós)</li>
-                                        <li>Araucaria-PR (pós)</li>
-                                        <li>Campo Largo-PR (pós)</li>
-                                        <li>Colombo-PR (pós)</li>
-                                        <li>Curitiba-PR (pós)</li>
-                                        <li>Fazenda Rio Grande-PR (pós)</li>
-                                        <li>Guaratuba-PR (pós)</li>
-                                        <li>Paranagua-PR (pós)</li>
-                                        <li>Pinhais-PR (pós)</li>
-                                        <li>Piraquara-PR (pós)</li>
-                                        <li>Quatro Barras-PR (pós)</li>
-                                        <li>Sao Jose Dos Pinhais-PR (pós)</li>
-                                        <li>Ararangua-SC (pós)</li>
-                                        <li>Biguacu-SC (pós)</li>
-                                        <li>Criciuma-SC (pós)</li>
-                                        <li>Florianopolis-SC (pós)</li>
-                                        <li>Palhoca-SC (pós)</li>
-                                        <li>Tubarao-SC (pós)</li>
-                                        <li>Camacari-BA (pós)</li>
-                                        <li>Lauro De Freitas-BA (pós)</li>
-                                        <li>Mata De Sao Joao-BA (pós)</li>
-                                        <li>Salvador-BA (pós)</li>
-
-                                            <li>Viçosa-MG</li>
-                                            <li>São José dos Pinhais-PR</li>
-                                            <li>Araranguá-SC</li>
-                                            <li>Biguaçu-SC</li>
-                                            <li>Criciúma-SC</li>
-                                            <li>Florianópolis-SC</li>
-                                            <li>Palhoça-SC</li>
-                                            <li>Tubarão-SC</li>
-                                            <li>Camaçari-BA</li>
-                                            <li>Lauro de Freitas-BA</li>
-                                            <li>Mata de São João-BA</li>
-                                            
-
-                                            
-                                    </ul>
-                            </main>
-                        </div>
-                    </div>
-
-                    
-                    <div class="container mt-5">
-                
-                        <table id="AQUISIÇÃO CONTROLE" class="table table-bordered tabela-escondida ">
-                            <thead class="thead-dark">
-                                <tr class="trh1">
-                                    <th colspan="9">PROMO CONTROLE</th>
-                                </tr>
-                                <tr>
-                                    <th scope="col">PRODUTO</th>
-                                    <th scope="col">BONUS DE REDES SOCIAIS E APP DE VIDEOS</th>
-                                    <th scope="col">PARA REDES SOCIAIS E APPS DE VIDEOS</th>
-                                    <th scope="col">PREÇO NO BOLETO</th>
-                                    <th scope="col">PREÇO NO DÉBITO</th>
-                                    <th scope="col">APP ILIMITADO</th>
-                                    <th scope="col">NOMENCLATURA</th>
-                                    <th scope="col">ASSINATURA INCLUSA</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>Claro Net Celular - Controle 20GB</td>
-                                    <td>3GB</td>
-                                    <td>
-                                        
-                                        <img class="logo-app" src="imagens/icones/icon-youtube.png" alt="WhatsApp">
-                                    
-                                    </td>
-                                    <td>R$44,90</td>
-                                    <td>R$39,90</td>
-                                    <td>
-                                        
-                                        <img class="logo-app" src="imagens/icones/icon-wpp.png" alt="WhatsApp">
-                                    
-                                    </td>
-                                    <td>CONTROLE 15GB S/AP PAD</td>
-                                    <td>-</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    
+            <div class="leg leg-left"></div>
+            <div class="leg leg-right"></div>
+            <div class="schoolbag"></div>
+          </div>
+          
+          <a href="https://claro-brown.vercel.app/home.html" target="_blank" style="text-decoration: none;">
+              <button class="button">
+                <div class="bgContainer">
+                  <span>SITE</span>
+                  <span>SITE</span>
                 </div>
-                                
+                <div class="arrowContainer">
+                  <svg
+                    width="25"
+                    height="25"
+                    viewBox="0 0 45 38"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M43.7678 20.7678C44.7441 19.7915 44.7441 18.2085 43.7678 17.2322L27.8579 1.32233C26.8816 0.34602 25.2986 0.34602 24.3223 1.32233C23.346 2.29864 23.346 3.88155 24.3223 4.85786L38.4645 19L24.3223 33.1421C23.346 34.1184 23.346 35.7014 24.3223 36.6777C25.2986 37.654 26.8816 37.654 27.8579 36.6777L43.7678 20.7678ZM0 21.5L42 21.5V16.5L0 16.5L0 21.5Z"
+                      fill="black"
+                    ></path>
+                  </svg>
+                </div>
+              </button>
+          </a>
+          
 
 
-
-                        
-
-            <div class="container mt-5">
-                
-                <table class="table table-bordered">
-                    <thead class="thead-dark">
-                        <tr class="trh1">
-                            <th colspan="9">PLANO PÓS PAGO</th>
-                        </tr>
-                        <tr style="background-color: rgba(83, 83, 83, 0.39); text-align: center;">
-                            <td colspan="9">
-                                <button id="exibirListaButtonPosPago" class="buttonth" data-target="janelaModal">Exibir Lista de Cidades</button>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="col">PRODUTO</th>
-                            <th scope="col">FRANQUIA EXTRA PLAY</th>
-                            <th scope="col" id="maes">OFERTA DIA DAS MÃES (12 MESES)</th>
-                            <th scope="col">FRANQUIA TOTAL</th>
-                            <th scope="col">PREÇO NO BOLETO</th>
-                            <th scope="col">PREÇO NO DÉBITO</th>
-                            <th scope="col">PASSAPORTE INCLUSO</th>
-                            <th scope="col">NOMENCLATURA</th>
-                            <th scope="col">APPS PARA UTILIZAR</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Claro Net Celular - Pós pago 25GB</td>
-                            <td>25GB</td>
-                            <td id="mae2"><strong>20GB</strong></td>
-                            <td>70GB</td>
-                            <td>R$89,90</td>
-                            <td>R$79,90</td>
-                            <td>AMÉRICAS TITULAR</td>
-                            <td>POS 25GB S/AP PAD</td>
-                            <td rowspan="5">
-                                <img class="logo-app2" src="imagens/icones/icon-disney.png">
-                                <img class="logo-app2" src="imagens/icones/icon-netflix.png">
-                                <img class="logo-app2" src="imagens/icones/icon-youtube.png">
-                                <img class="logo-app2" src="imagens/icones/icon-clarotv.png">
-                                <img class="logo-app2" src="imagens/icones/icon-hbo.png">
-                                <img class="logo-app2" src="imagens/icones/icon-disney.png">
-                                <img class="logo-app2" src="imagens/icones/icon-globoplay.png">
-                                <img class="logo-app2" src="imagens/icones/icon-tiktok.png">
-                                <img class="logo-app2" src="imagens/icones/icon-star.png">
-                                <img class="logo-app2" src="imagens/icones/icon-instagram.png">
-                                <img class="logo-app2" src="imagens/icones/icon-facebook.png">
-                                <img class="logo-app2" src="imagens/icones/icon-twitter.png">
-                                <!-- Adicione mais logos conforme necessário -->
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>Claro Net Celular - Pós pago 50GB</td>
-                            <td>50GB</td>
-                            <td id="mae2"><strong>20GB</strong></td>
-                            <td>120GB</td>
-                            <td>R$119,90</td>
-                            <td>R$109,90</td>
-                            <td>AMÉRICAS TITULAR E DEPENDENTE</td>
-                            <td>POS 50GB S/AP PAD</td>
-                            
-                        </tr>
-                        <tr>
-                            <td>Claro Net Celular - Pós pago 100GB</td>
-                            <td>100GB</td>
-                            <td id="mae2"><strong>20GB</strong></td>
-                            <td>220GB</td>
-                            <td>R$169,90</td>
-                            <td>R$159,90</td>
-                            <td>AMÉRICAS TITULAR E DEPENDENTE</td>
-                            <td>POS 100GB S/AP PAD</td>
-                            
-                        </tr>
-                        <tr>
-                            <td>Claro Net Celular - Pós pago 150GB</td>
-                            <td>150GB</td>
-                            <td id="mae2"><strong>20GB</strong></td>
-                            <td>320GB</td>
-                            <td>R$219,90</td>
-                            <td>R$209,90</td>
-                            <td>AMÉRICAS TITULAR E DEPENDENTE</td>
-                            <td>POS 150GB S/AP PAD</td>
-                            
-                        </tr>
-                        <tr>
-                            <td>Claro Net Celular - Pós pago 300GB</td>
-                            <td>300GB</td>
-                            <td id="mae2"><strong>20GB</strong></td>
-                            <td>620GB</td>
-                            <td>R$319,90</td>
-                            <td>R$309,90</td>
-                            <td>AMÉRICAS E EUROPA TITULAR E DEPENDENTE</td>
-                            <td>POS 300GB S/AP PAD</td>
-                            
-                        </tr>
-                        <tr>
-                            <th style="text-align: center; font-size: 1.2em;"><strong>DEPENDENTE</strong></th>
-                            <td colspan="7" style="text-align: center; font-size: 1.2em;">R$50,00</td>
-                        </tr>
-                       <tr>
-                        <td>50GB</td>
-                        <td colspan="4">Não tem dependente gratuito, mas pode adquiri  1 pago</td>
-                        <td style="text-align: center;" colspan="3"><strong>PDF MÓVEL</strong></td>
-                       </tr>
-
-                       <tr>
-                        <td>100GB</td>
-                        <td colspan="4">Não tem dependente gratuito, mas pode adquiri  2 pago</td>
-
-                        <td colspan="3" rowspan="4" style="text-align: center;">
-                            <a href="pdf-residencial/pdf-geral.pdf">
-                                <img id="iconpdf" src="imagens/icon-pdf.png" alt="pdf">
-                                <p><strong>PDF GERAL</strong></p>
-                            </a>
-                        </td>
-                       </tr>
-                       <tr>
-                        <td>200GB</td>
-                        <td colspan="4">Tem direito a 1 gratuito, e pode adquiri + 2 pago</td>
-                       </tr>
-                       <tr>
-                        <td>300GB</td>
-                        <td colspan="4">Tem direito a 2 gratuito, e pode adquiri 2 pago</td>
-                       </tr>
-                       <tr>
-                        <td>600GB</td>
-                        <td colspan="4">Tem direito a 3 gratuito, e pode adquiri 2 pago</td>
-                       </tr>
-                    </tbody>
-                </table>
-            </div>
-            
-        </div>
-
-
-        <div class="container mt-5">
-                
-            <table id="AQUISIÇÃO PÓS" class="table table-bordered tabela-escondida ">
-                <thead class="thead-dark">
-                    <tr class="trh1">
-                        <th colspan="8">PROMO PÓS PAGO</th>
-                    </tr>
-                
-
-                    <tr>
-                        <th scope="col">PRODUTO</th>
-                        <th scope="col">FRANQUIA EXTRA PLAY</th>
-                        <th scope="col">FRANQUIA TOTAL</th>
-                        <th scope="col">PREÇO NO BOLETO</th>
-                        <th scope="col">PREÇO NO DÉBITO</th>
-                        <th scope="col">PASSAPORTE INCLUSO</th>
-                        <th scope="col">NOMENCLATURA</th>
-                        <th scope="col">APPS PARA UTILIZAR</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Claro Net Celular - Pós pago 25GB</td>
-                        <td>25GB</td>
-                        <td>50GB</td>
-                        <td>R$69,90</td>
-                        <td>R$59,90</td>
-                        <td>AMÉRICAS TITULAR</td>
-                        <td>POS 25GB S/AP PAD</td>
-                        <td rowspan="2">
-                            <img class="logo-app2" src="imagens/icones/icon-disney.png">
-                            <img class="logo-app2" src="imagens/icones/icon-netflix.png">
-                            <img class="logo-app2" src="imagens/icones/icon-youtube.png">
-                            <img class="logo-app2" src="imagens/icones/icon-clarotv.png">
-                            <img class="logo-app2" src="imagens/icones/icon-hbo.png">
-                            <img class="logo-app2" src="imagens/icones/icon-disney.png">
-                            <img class="logo-app2" src="imagens/icones/icon-globoplay.png">
-                            <img class="logo-app2" src="imagens/icones/icon-tiktok.png">
-                            <img class="logo-app2" src="imagens/icones/icon-star.png">
-                            <img class="logo-app2" src="imagens/icones/icon-instagram.png">
-                            <img class="logo-app2" src="imagens/icones/icon-facebook.png">
-                            <img class="logo-app2" src="imagens/icones/icon-twitter.png">
-                            <!-- Adicione mais logos conforme necessário -->
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        
-    </div>
-
-
-    </main>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <script src="estilosJS/movel.js"></script>
-    
+          
+      
 </body>
 </html>
